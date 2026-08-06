@@ -1,0 +1,19 @@
+name: Catalog source drift
+
+on:
+  schedule:
+    - cron: '41 7 * * 2'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-upstream:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out source
+        uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+      - name: Verify official artifact digests
+        run: python3 tools/update_catalogs.py --verify-upstream

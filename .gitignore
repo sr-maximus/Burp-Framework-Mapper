@@ -1,0 +1,12 @@
+# SPDX-License-Identifier: Apache-2.0
+/target/
+/build/
+/.idea/
+/.vscode/
+/.codebase-memory/
+*.iml
+.DS_Store
+dependency-check-data/
+*.log
+*.tmp
+*.swp

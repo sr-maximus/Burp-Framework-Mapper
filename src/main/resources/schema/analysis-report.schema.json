@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/sr-maximus/Burp-Framework-Mapper/blob/main/src/main/resources/schema/analysis-report.schema.json",
+  "title": "Burp Framework Mapper analysis report",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "generatedAt", "productVersion", "catalogManifest", "findings", "reviewNotice"],
+  "properties": {
+    "schemaVersion": {"const": "1.0.0"},
+    "generatedAt": {"type": "string", "format": "date-time"},
+    "productVersion": {"type": "string", "minLength": 1},
+    "catalogManifest": {"type": "string", "minLength": 1},
+    "reviewNotice": {"type": "string", "minLength": 1},
+    "findings": {"type": "array", "items": {"$ref": "#/$defs/analysisResult"}}
+  },
+  "$defs": {
+    "stringList": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "surface": {
+      "enum": ["WEB", "API", "MOBILE", "AI_ML_LLM", "ENTERPRISE", "ICS_OT", "FRAUD", "GENERIC_UNKNOWN"]
+    },
+    "finding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "title", "description", "evidence", "asset", "surface", "cweIds", "cve", "cvssVector", "businessContext", "burpSeverity", "burpConfidence", "tags", "origin"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "title": {"type": "string", "minLength": 1},
+        "description": {"type": "string"},
+        "evidence": {"type": "string"},
+        "asset": {"type": "string"},
+        "surface": {"$ref": "#/$defs/surface"},
+        "cweIds": {"$ref": "#/$defs/stringList"},
+        "cve": {"type": "string"},
+        "cvssVector": {"type": "string"},
+        "businessContext": {"type": "string"},
+        "burpSeverity": {"type": "string"},
+        "burpConfidence": {"type": "string"},
+        "tags": {"$ref": "#/$defs/stringList"},
+        "origin": {"type": "string", "minLength": 1}
+      }
+    },
+    "cvss": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["version", "vector", "score", "severity", "valid", "error"],
+      "properties": {
+        "version": {"const": "4.0"},
+        "vector": {"type": "string"},
+        "score": {"type": "number", "minimum": 0, "maximum": 10},
+        "severity": {"enum": ["Not provided", "Invalid", "None", "Low", "Medium", "High", "Critical"]},
+        "valid": {"type": "boolean"},
+        "error": {"type": "string"}
+      }
+    },
+    "correlation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["framework", "frameworkVersion", "identifier", "title", "relationType", "confidenceScore", "confidence", "matchedSignals", "explanation", "officialUrl", "verifiedDate", "limitations", "affectedSurfaces"],
+      "properties": {
+        "framework": {"type": "string", "minLength": 1},
+        "frameworkVersion": {"type": "string", "minLength": 1},
+        "identifier": {"type": "string", "minLength": 1},
+        "title": {"type": "string", "minLength": 1},
+        "relationType": {"enum": ["INPUT_ASSERTED", "OFFICIAL_REFERENCE", "CURATED_CORRELATION", "CONTEXTUAL_ENABLEMENT", "DEFENSIVE_MITIGATION"]},
+        "confidenceScore": {"type": "number", "minimum": 0.5, "maximum": 1},
+        "confidence": {"enum": ["HIGH", "MEDIUM", "LOW"]},
+        "matchedSignals": {"$ref": "#/$defs/stringList"},
+        "explanation": {"type": "string", "minLength": 1},
+        "officialUrl": {"type": "string", "format": "uri", "pattern": "^https://"},
+        "verifiedDate": {"type": "string", "format": "date"},
+        "limitations": {"type": "string", "minLength": 1},
+        "affectedSurfaces": {"type": "array", "items": {"$ref": "#/$defs/surface"}, "minItems": 1, "uniqueItems": true}
+      }
+    },
+    "analysisResult": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["finding", "cvss", "correlations"],
+      "properties": {
+        "finding": {"$ref": "#/$defs/finding"},
+        "cvss": {"$ref": "#/$defs/cvss"},
+        "correlations": {"type": "array", "items": {"$ref": "#/$defs/correlation"}}
+      }
+    }
+  }
+}

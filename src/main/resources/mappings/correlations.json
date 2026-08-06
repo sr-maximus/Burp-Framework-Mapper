@@ -1,0 +1,1764 @@
+[
+  {
+    "framework": "CWE",
+    "frameworkVersion": "4.20",
+    "identifier": "CWE-79",
+    "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
+    "relationType": "INPUT_ASSERTED",
+    "cweIds": [
+      "CWE-79"
+    ],
+    "surfaces": [
+      "WEB"
+    ],
+    "keywords": [
+      "cross-site scripting",
+      "xss"
+    ],
+    "explanation": "The CWE was asserted by the analyst or matched by an unambiguous weakness phrase.",
+    "officialUrl": "https://cwe.mitre.org/data/definitions/79.html",
+    "verifiedDate": "2026-08-06",
+    "limitations": "A CWE identifies a weakness type; it does not prove exploitability or business impact."
+  },
+  {
+    "framework": "CWE",
+    "frameworkVersion": "4.20",
+    "identifier": "CWE-89",
+    "title": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')",
+    "relationType": "INPUT_ASSERTED",
+    "cweIds": [
+      "CWE-89"
+    ],
+    "surfaces": [
+      "WEB",
+      "API"
+    ],
+    "keywords": [
+      "sql injection",
+      "sqli"
+    ],
+    "explanation": "The CWE was asserted by the analyst or matched by an unambiguous weakness phrase.",
+    "officialUrl": "https://cwe.mitre.org/data/definitions/89.html",
+    "verifiedDate": "2026-08-06",
+    "limitations": "A CWE identifies a weakness type; it does not prove exploitability or business impact."
+  },
+  {
+    "framework": "CWE",
+    "frameworkVersion": "4.20",
+    "identifier": "CWE-918",
+    "title": "Server-Side Request Forgery (SSRF)",
+    "relationType": "INPUT_ASSERTED",
+    "cweIds": [
+      "CWE-918"
+    ],
+    "surfaces": [
+      "WEB",
+      "API"
+    ],
+    "keywords": [
+      "server-side request forgery",
+      "ssrf"
+    ],
+    "explanation": "The CWE was asserted by the analyst or matched by an unambiguous weakness phrase.",
+    "officialUrl": "https://cwe.mitre.org/data/definitions/918.html",
+    "verifiedDate": "2026-08-06",
+    "limitations": "A CWE identifies a weakness type; it does not prove exploitability or business impact."
+  },
+  {
+    "framework": "CWE",
+    "frameworkVersion": "4.20",
+    "identifier": "CWE-639",
+    "title": "Authorization Bypass Through User-Controlled Key",
+    "relationType": "INPUT_ASSERTED",
+    "cweIds": [
+      "CWE-639"
+    ],
+    "surfaces": [
+      "WEB",
+      "API"
+    ],
+    "keywords": [
+      "broken object level authorization",
+      "bola",
+      "idor"
+    ],
+    "explanation": "The CWE was asserted by the analyst or matched by an unambiguous weakness phrase.",
+    "officialUrl": "https://cwe.mitre.org/data/definitions/639.html",
+    "verifiedDate": "2026-08-06",
+    "limitations": "A CWE identifies a weakness type; it does not prove exploitability or business impact."
+  },
+  {
+    "framework": "CWE",
+    "frameworkVersion": "4.20",
+    "identifier": "CWE-307",
+    "title": "Improper Restriction of Excessive Authentication Attempts",
+    "relationType": "INPUT_ASSERTED",
+    "cweIds": [
+      "CWE-307"
+    ],
+    "surfaces": [
+      "WEB",
+      "API",
+      "FRAUD"
+    ],
+    "keywords": [
+      "credential stuffing",
+      "password spraying"
+    ],
+    "explanation": "The CWE was asserted by the analyst or matched by an unambiguous weakness phrase.",
+    "officialUrl": "https://cwe.mitre.org/data/definitions/307.html",
+    "verifiedDate": "2026-08-06",
+    "limitations": "A CWE identifies a weakness type; it does not prove exploitability or business impact."
+  },
+  {
+    "framework": "CWE",
+    "frameworkVersion": "4.20",
+    "identifier": "CWE-798",
+    "title": "Use of Hard-coded Credentials",
+    "relationType": "INPUT_ASSERTED",
+    "cweIds": [
+      "CWE-798"
+    ],
+    "surfaces": [
+      "GENERIC_UNKNOWN",
+      "MOBILE",
+      "ENTERPRISE"
+    ],
+    "keywords": [
+      "hard-coded credentials",
+      "hardcoded credentials"
+    ],
+    "explanation": "The CWE was asserted by the analyst or matched by an unambiguous weakness phrase.",
+    "officialUrl": "https://cwe.mitre.org/data/definitions/798.html",
+    "verifiedDate": "2026-08-06",
+    "limitations": "A CWE identifies a weakness type; it does not prove exploitability or business impact."
+  },
+  {
+    "framework": "CWE",
+    "frameworkVersion": "4.20",
+    "identifier": "CWE-502",
+    "title": "Deserialization of Untrusted Data",
+    "relationType": "INPUT_ASSERTED",
+    "cweIds": [
+      "CWE-502"
+    ],
+    "surfaces": [
+      "WEB",
+      "API",
+      "ENTERPRISE"
+    ],
+    "keywords": [
+      "unsafe deserialization",
+      "deserialization of untrusted data"
+    ],
+    "explanation": "The CWE was asserted by the analyst or matched by an unambiguous weakness phrase.",
+    "officialUrl": "https://cwe.mitre.org/data/definitions/502.html",
+    "verifiedDate": "2026-08-06",
+    "limitations": "A CWE identifies a weakness type; it does not prove exploitability or business impact."
+  },
+  {
+    "framework": "CWE",
+    "frameworkVersion": "4.20",
+    "identifier": "CWE-22",
+    "title": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')",
+    "relationType": "INPUT_ASSERTED",
+    "cweIds": [
+      "CWE-22"
+    ],
+    "surfaces": [
+      "WEB",
+      "API",
+      "MOBILE"
+    ],
+    "keywords": [
+      "path traversal"
+    ],
+    "explanation": "The CWE was asserted by the analyst or matched by an unambiguous weakness phrase.",
+    "officialUrl": "https://cwe.mitre.org/data/definitions/22.html",
+    "verifiedDate": "2026-08-06",
+    "limitations": "A CWE identifies a weakness type; it does not prove exploitability or business impact."
+  },
+  {
+    "framework": "CWE",
+    "frameworkVersion": "4.20",
+    "identifier": "CWE-16",
+    "title": "Configuration",
+    "relationType": "INPUT_ASSERTED",
+    "cweIds": [
+      "CWE-16"
+    ],
+    "surfaces": [
+      "GENERIC_UNKNOWN",
+      "WEB",
+      "API",
+      "MOBILE",
+      "ICS_OT"
+    ],
+    "keywords": [
+      "security misconfiguration",
+      "insecure configuration"
+    ],
+    "explanation": "The CWE was asserted by the analyst or matched by an unambiguous weakness phrase.",
+    "officialUrl": "https://cwe.mitre.org/data/definitions/16.html",
+    "verifiedDate": "2026-08-06",
+    "limitations": "A CWE identifies a weakness type; it does not prove exploitability or business impact."
+  },
+  {
+    "framework": "CWE",
+    "frameworkVersion": "4.20",
+    "identifier": "CWE-1104",
+    "title": "Use of Unmaintained Third Party Components",
+    "relationType": "INPUT_ASSERTED",
+    "cweIds": [
+      "CWE-1104"
+    ],
+    "surfaces": [
+      "GENERIC_UNKNOWN",
+      "WEB",
+      "API",
+      "MOBILE",
+      "AI_ML_LLM"
+    ],
+    "keywords": [
+      "unmaintained component",
+      "outdated component"
+    ],
+    "explanation": "The CWE was asserted by the analyst or matched by an unambiguous weakness phrase.",
+    "officialUrl": "https://cwe.mitre.org/data/definitions/1104.html",
+    "verifiedDate": "2026-08-06",
+    "limitations": "A CWE identifies a weakness type; it does not prove exploitability or business impact."
+  },
+  {
+    "framework": "CWE",
+    "frameworkVersion": "4.20",
+    "identifier": "CWE-20",
+    "title": "Improper Input Validation",
+    "relationType": "INPUT_ASSERTED",
+    "cweIds": [
+      "CWE-20"
+    ],
+    "surfaces": [
+      "GENERIC_UNKNOWN",
+      "WEB",
+      "API",
+      "MOBILE"
+    ],
+    "keywords": [
+      "improper input validation",
+      "insufficient input validation"
+    ],
+    "explanation": "The CWE was asserted by the analyst or matched by an unambiguous weakness phrase.",
+    "officialUrl": "https://cwe.mitre.org/data/definitions/20.html",
+    "verifiedDate": "2026-08-06",
+    "limitations": "A CWE identifies a weakness type; it does not prove exploitability or business impact."
+  },
+  {
+    "framework": "OWASP Top 10 Web",
+    "frameworkVersion": "2025",
+    "identifier": "A01:2025",
+    "title": "Broken Access Control",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [
+      "CWE-639"
+    ],
+    "surfaces": [
+      "WEB"
+    ],
+    "keywords": [
+      "broken access control",
+      "idor"
+    ],
+    "explanation": "Project-curated correlation from an observed web weakness to an OWASP awareness category.",
+    "officialUrl": "https://owasp.org/Top10/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "OWASP Top 10 is an awareness document, not a verification or compliance standard."
+  },
+  {
+    "framework": "OWASP Top 10 Web",
+    "frameworkVersion": "2025",
+    "identifier": "A02:2025",
+    "title": "Security Misconfiguration",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [
+      "CWE-16"
+    ],
+    "surfaces": [
+      "WEB"
+    ],
+    "keywords": [
+      "security misconfiguration",
+      "insecure configuration"
+    ],
+    "explanation": "Project-curated correlation from an observed web weakness to an OWASP awareness category.",
+    "officialUrl": "https://owasp.org/Top10/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "OWASP Top 10 is an awareness document, not a verification or compliance standard."
+  },
+  {
+    "framework": "OWASP Top 10 Web",
+    "frameworkVersion": "2025",
+    "identifier": "A03:2025",
+    "title": "Software Supply Chain Failures",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [
+      "CWE-1104"
+    ],
+    "surfaces": [
+      "WEB"
+    ],
+    "keywords": [
+      "software supply chain",
+      "dependency confusion"
+    ],
+    "explanation": "Project-curated correlation from an observed web weakness to an OWASP awareness category.",
+    "officialUrl": "https://owasp.org/Top10/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "OWASP Top 10 is an awareness document, not a verification or compliance standard."
+  },
+  {
+    "framework": "OWASP Top 10 Web",
+    "frameworkVersion": "2025",
+    "identifier": "A04:2025",
+    "title": "Cryptographic Failures",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [],
+    "surfaces": [
+      "WEB"
+    ],
+    "keywords": [
+      "cryptographic failure",
+      "weak cryptography"
+    ],
+    "explanation": "Project-curated correlation from an observed web weakness to an OWASP awareness category.",
+    "officialUrl": "https://owasp.org/Top10/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "OWASP Top 10 is an awareness document, not a verification or compliance standard."
+  },
+  {
+    "framework": "OWASP Top 10 Web",
+    "frameworkVersion": "2025",
+    "identifier": "A05:2025",
+    "title": "Injection",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [
+      "CWE-79",
+      "CWE-89"
+    ],
+    "surfaces": [
+      "WEB"
+    ],
+    "keywords": [
+      "sql injection",
+      "cross-site scripting",
+      "command injection"
+    ],
+    "explanation": "Project-curated correlation from an observed web weakness to an OWASP awareness category.",
+    "officialUrl": "https://owasp.org/Top10/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "OWASP Top 10 is an awareness document, not a verification or compliance standard."
+  },
+  {
+    "framework": "OWASP Top 10 Web",
+    "frameworkVersion": "2025",
+    "identifier": "A06:2025",
+    "title": "Insecure Design",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [],
+    "surfaces": [
+      "WEB"
+    ],
+    "keywords": [
+      "insecure design"
+    ],
+    "explanation": "Project-curated correlation from an observed web weakness to an OWASP awareness category.",
+    "officialUrl": "https://owasp.org/Top10/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "OWASP Top 10 is an awareness document, not a verification or compliance standard."
+  },
+  {
+    "framework": "OWASP Top 10 Web",
+    "frameworkVersion": "2025",
+    "identifier": "A07:2025",
+    "title": "Authentication Failures",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [
+      "CWE-307",
+      "CWE-798"
+    ],
+    "surfaces": [
+      "WEB"
+    ],
+    "keywords": [
+      "authentication failure",
+      "credential stuffing"
+    ],
+    "explanation": "Project-curated correlation from an observed web weakness to an OWASP awareness category.",
+    "officialUrl": "https://owasp.org/Top10/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "OWASP Top 10 is an awareness document, not a verification or compliance standard."
+  },
+  {
+    "framework": "OWASP Top 10 Web",
+    "frameworkVersion": "2025",
+    "identifier": "A08:2025",
+    "title": "Software or Data Integrity Failures",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [
+      "CWE-502"
+    ],
+    "surfaces": [
+      "WEB"
+    ],
+    "keywords": [
+      "software integrity failure",
+      "unsafe deserialization"
+    ],
+    "explanation": "Project-curated correlation from an observed web weakness to an OWASP awareness category.",
+    "officialUrl": "https://owasp.org/Top10/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "OWASP Top 10 is an awareness document, not a verification or compliance standard."
+  },
+  {
+    "framework": "OWASP Top 10 Web",
+    "frameworkVersion": "2025",
+    "identifier": "A09:2025",
+    "title": "Security Logging and Alerting Failures",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [],
+    "surfaces": [
+      "WEB"
+    ],
+    "keywords": [
+      "insufficient logging",
+      "security logging failure"
+    ],
+    "explanation": "Project-curated correlation from an observed web weakness to an OWASP awareness category.",
+    "officialUrl": "https://owasp.org/Top10/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "OWASP Top 10 is an awareness document, not a verification or compliance standard."
+  },
+  {
+    "framework": "OWASP Top 10 Web",
+    "frameworkVersion": "2025",
+    "identifier": "A10:2025",
+    "title": "Mishandling of Exceptional Conditions",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [],
+    "surfaces": [
+      "WEB"
+    ],
+    "keywords": [
+      "unhandled exception",
+      "fail open"
+    ],
+    "explanation": "Project-curated correlation from an observed web weakness to an OWASP awareness category.",
+    "officialUrl": "https://owasp.org/Top10/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "OWASP Top 10 is an awareness document, not a verification or compliance standard."
+  },
+  {
+    "framework": "OWASP API Security Top 10",
+    "frameworkVersion": "2023",
+    "identifier": "API1:2023",
+    "title": "Broken Object Level Authorization",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [
+      "CWE-639"
+    ],
+    "surfaces": [
+      "API"
+    ],
+    "keywords": [
+      "broken object level authorization",
+      "bola"
+    ],
+    "explanation": "Project-curated correlation scoped to an API finding and an OWASP API risk category.",
+    "officialUrl": "https://owasp.org/API-Security/editions/2023/en/0x11-t10/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "The category is not proof that every scenario described by OWASP is present."
+  },
+  {
+    "framework": "OWASP API Security Top 10",
+    "frameworkVersion": "2023",
+    "identifier": "API2:2023",
+    "title": "Broken Authentication",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [
+      "CWE-307",
+      "CWE-798"
+    ],
+    "surfaces": [
+      "API"
+    ],
+    "keywords": [
+      "broken authentication",
+      "credential stuffing"
+    ],
+    "explanation": "Project-curated correlation scoped to an API finding and an OWASP API risk category.",
+    "officialUrl": "https://owasp.org/API-Security/editions/2023/en/0x11-t10/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "The category is not proof that every scenario described by OWASP is present."
+  },
+  {
+    "framework": "OWASP API Security Top 10",
+    "frameworkVersion": "2023",
+    "identifier": "API3:2023",
+    "title": "Broken Object Property Level Authorization",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [
+      "CWE-639"
+    ],
+    "surfaces": [
+      "API"
+    ],
+    "keywords": [
+      "broken object property level authorization",
+      "bopla"
+    ],
+    "explanation": "Project-curated correlation scoped to an API finding and an OWASP API risk category.",
+    "officialUrl": "https://owasp.org/API-Security/editions/2023/en/0x11-t10/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "The category is not proof that every scenario described by OWASP is present."
+  },
+  {
+    "framework": "OWASP API Security Top 10",
+    "frameworkVersion": "2023",
+    "identifier": "API4:2023",
+    "title": "Unrestricted Resource Consumption",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [
+      "CWE-307"
+    ],
+    "surfaces": [
+      "API"
+    ],
+    "keywords": [
+      "unrestricted resource consumption",
+      "missing rate limit",
+      "rate limit bypass"
+    ],
+    "explanation": "Project-curated correlation scoped to an API finding and an OWASP API risk category.",
+    "officialUrl": "https://owasp.org/API-Security/editions/2023/en/0x11-t10/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "The category is not proof that every scenario described by OWASP is present."
+  },
+  {
+    "framework": "OWASP API Security Top 10",
+    "frameworkVersion": "2023",
+    "identifier": "API5:2023",
+    "title": "Broken Function Level Authorization",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [
+      "CWE-639"
+    ],
+    "surfaces": [
+      "API"
+    ],
+    "keywords": [
+      "broken function level authorization",
+      "bfla"
+    ],
+    "explanation": "Project-curated correlation scoped to an API finding and an OWASP API risk category.",
+    "officialUrl": "https://owasp.org/API-Security/editions/2023/en/0x11-t10/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "The category is not proof that every scenario described by OWASP is present."
+  },
+  {
+    "framework": "OWASP API Security Top 10",
+    "frameworkVersion": "2023",
+    "identifier": "API6:2023",
+    "title": "Unrestricted Access to Sensitive Business Flows",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [],
+    "surfaces": [
+      "API"
+    ],
+    "keywords": [
+      "sensitive business flow",
+      "automated abuse"
+    ],
+    "explanation": "Project-curated correlation scoped to an API finding and an OWASP API risk category.",
+    "officialUrl": "https://owasp.org/API-Security/editions/2023/en/0x11-t10/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "The category is not proof that every scenario described by OWASP is present."
+  },
+  {
+    "framework": "OWASP API Security Top 10",
+    "frameworkVersion": "2023",
+    "identifier": "API7:2023",
+    "title": "Server Side Request Forgery",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [
+      "CWE-918"
+    ],
+    "surfaces": [
+      "API"
+    ],
+    "keywords": [
+      "server-side request forgery",
+      "ssrf"
+    ],
+    "explanation": "Project-curated correlation scoped to an API finding and an OWASP API risk category.",
+    "officialUrl": "https://owasp.org/API-Security/editions/2023/en/0x11-t10/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "The category is not proof that every scenario described by OWASP is present."
+  },
+  {
+    "framework": "OWASP API Security Top 10",
+    "frameworkVersion": "2023",
+    "identifier": "API8:2023",
+    "title": "Security Misconfiguration",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [
+      "CWE-16"
+    ],
+    "surfaces": [
+      "API"
+    ],
+    "keywords": [
+      "security misconfiguration"
+    ],
+    "explanation": "Project-curated correlation scoped to an API finding and an OWASP API risk category.",
+    "officialUrl": "https://owasp.org/API-Security/editions/2023/en/0x11-t10/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "The category is not proof that every scenario described by OWASP is present."
+  },
+  {
+    "framework": "OWASP API Security Top 10",
+    "frameworkVersion": "2023",
+    "identifier": "API9:2023",
+    "title": "Improper Inventory Management",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [],
+    "surfaces": [
+      "API"
+    ],
+    "keywords": [
+      "improper inventory management",
+      "shadow api"
+    ],
+    "explanation": "Project-curated correlation scoped to an API finding and an OWASP API risk category.",
+    "officialUrl": "https://owasp.org/API-Security/editions/2023/en/0x11-t10/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "The category is not proof that every scenario described by OWASP is present."
+  },
+  {
+    "framework": "OWASP API Security Top 10",
+    "frameworkVersion": "2023",
+    "identifier": "API10:2023",
+    "title": "Unsafe Consumption of APIs",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [
+      "CWE-20"
+    ],
+    "surfaces": [
+      "API"
+    ],
+    "keywords": [
+      "unsafe consumption of apis",
+      "untrusted third-party api"
+    ],
+    "explanation": "Project-curated correlation scoped to an API finding and an OWASP API risk category.",
+    "officialUrl": "https://owasp.org/API-Security/editions/2023/en/0x11-t10/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "The category is not proof that every scenario described by OWASP is present."
+  },
+  {
+    "framework": "OWASP Mobile Top 10",
+    "frameworkVersion": "2024",
+    "identifier": "M1:2024",
+    "title": "Improper Credential Usage",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [
+      "CWE-798"
+    ],
+    "surfaces": [
+      "MOBILE"
+    ],
+    "keywords": [
+      "improper credential usage",
+      "hard-coded credentials"
+    ],
+    "explanation": "Project-curated correlation scoped to a mobile application finding.",
+    "officialUrl": "https://owasp.org/www-project-mobile-top-10/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "The Mobile Top 10 category is an awareness classification, not a MASVS verification result."
+  },
+  {
+    "framework": "OWASP Mobile Top 10",
+    "frameworkVersion": "2024",
+    "identifier": "M2:2024",
+    "title": "Inadequate Supply Chain Security",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [
+      "CWE-1104"
+    ],
+    "surfaces": [
+      "MOBILE"
+    ],
+    "keywords": [
+      "mobile supply chain",
+      "inadequate supply chain security"
+    ],
+    "explanation": "Project-curated correlation scoped to a mobile application finding.",
+    "officialUrl": "https://owasp.org/www-project-mobile-top-10/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "The Mobile Top 10 category is an awareness classification, not a MASVS verification result."
+  },
+  {
+    "framework": "OWASP Mobile Top 10",
+    "frameworkVersion": "2024",
+    "identifier": "M3:2024",
+    "title": "Insecure Authentication/Authorization",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [
+      "CWE-307",
+      "CWE-639"
+    ],
+    "surfaces": [
+      "MOBILE"
+    ],
+    "keywords": [
+      "insecure authentication",
+      "insecure authorization"
+    ],
+    "explanation": "Project-curated correlation scoped to a mobile application finding.",
+    "officialUrl": "https://owasp.org/www-project-mobile-top-10/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "The Mobile Top 10 category is an awareness classification, not a MASVS verification result."
+  },
+  {
+    "framework": "OWASP Mobile Top 10",
+    "frameworkVersion": "2024",
+    "identifier": "M4:2024",
+    "title": "Insufficient Input/Output Validation",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [
+      "CWE-20"
+    ],
+    "surfaces": [
+      "MOBILE"
+    ],
+    "keywords": [
+      "insufficient input validation",
+      "insufficient output validation"
+    ],
+    "explanation": "Project-curated correlation scoped to a mobile application finding.",
+    "officialUrl": "https://owasp.org/www-project-mobile-top-10/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "The Mobile Top 10 category is an awareness classification, not a MASVS verification result."
+  },
+  {
+    "framework": "OWASP Mobile Top 10",
+    "frameworkVersion": "2024",
+    "identifier": "M5:2024",
+    "title": "Insecure Communication",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [],
+    "surfaces": [
+      "MOBILE"
+    ],
+    "keywords": [
+      "insecure communication",
+      "cleartext traffic"
+    ],
+    "explanation": "Project-curated correlation scoped to a mobile application finding.",
+    "officialUrl": "https://owasp.org/www-project-mobile-top-10/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "The Mobile Top 10 category is an awareness classification, not a MASVS verification result."
+  },
+  {
+    "framework": "OWASP Mobile Top 10",
+    "frameworkVersion": "2024",
+    "identifier": "M6:2024",
+    "title": "Inadequate Privacy Controls",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [],
+    "surfaces": [
+      "MOBILE"
+    ],
+    "keywords": [
+      "inadequate privacy controls",
+      "privacy leakage"
+    ],
+    "explanation": "Project-curated correlation scoped to a mobile application finding.",
+    "officialUrl": "https://owasp.org/www-project-mobile-top-10/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "The Mobile Top 10 category is an awareness classification, not a MASVS verification result."
+  },
+  {
+    "framework": "OWASP Mobile Top 10",
+    "frameworkVersion": "2024",
+    "identifier": "M7:2024",
+    "title": "Insufficient Binary Protections",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [],
+    "surfaces": [
+      "MOBILE"
+    ],
+    "keywords": [
+      "insufficient binary protection",
+      "binary tampering"
+    ],
+    "explanation": "Project-curated correlation scoped to a mobile application finding.",
+    "officialUrl": "https://owasp.org/www-project-mobile-top-10/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "The Mobile Top 10 category is an awareness classification, not a MASVS verification result."
+  },
+  {
+    "framework": "OWASP Mobile Top 10",
+    "frameworkVersion": "2024",
+    "identifier": "M8:2024",
+    "title": "Security Misconfiguration",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [
+      "CWE-16"
+    ],
+    "surfaces": [
+      "MOBILE"
+    ],
+    "keywords": [
+      "security misconfiguration"
+    ],
+    "explanation": "Project-curated correlation scoped to a mobile application finding.",
+    "officialUrl": "https://owasp.org/www-project-mobile-top-10/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "The Mobile Top 10 category is an awareness classification, not a MASVS verification result."
+  },
+  {
+    "framework": "OWASP Mobile Top 10",
+    "frameworkVersion": "2024",
+    "identifier": "M9:2024",
+    "title": "Insecure Data Storage",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [],
+    "surfaces": [
+      "MOBILE"
+    ],
+    "keywords": [
+      "insecure data storage",
+      "sensitive data stored"
+    ],
+    "explanation": "Project-curated correlation scoped to a mobile application finding.",
+    "officialUrl": "https://owasp.org/www-project-mobile-top-10/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "The Mobile Top 10 category is an awareness classification, not a MASVS verification result."
+  },
+  {
+    "framework": "OWASP Mobile Top 10",
+    "frameworkVersion": "2024",
+    "identifier": "M10:2024",
+    "title": "Insufficient Cryptography",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [],
+    "surfaces": [
+      "MOBILE"
+    ],
+    "keywords": [
+      "insufficient cryptography",
+      "weak cryptography"
+    ],
+    "explanation": "Project-curated correlation scoped to a mobile application finding.",
+    "officialUrl": "https://owasp.org/www-project-mobile-top-10/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "The Mobile Top 10 category is an awareness classification, not a MASVS verification result."
+  },
+  {
+    "framework": "OWASP MASVS",
+    "frameworkVersion": "2.1.0",
+    "identifier": "MASVS-STORAGE-1",
+    "title": "The app securely stores sensitive data.",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [],
+    "surfaces": [
+      "MOBILE"
+    ],
+    "keywords": [
+      "insecure data storage",
+      "sensitive data stored"
+    ],
+    "explanation": "The finding may indicate that the cited MASVS control should be reviewed.",
+    "officialUrl": "https://mas.owasp.org/MASVS/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "This is not an attestation that the application passes or fails MASVS."
+  },
+  {
+    "framework": "OWASP MASVS",
+    "frameworkVersion": "2.1.0",
+    "identifier": "MASVS-STORAGE-2",
+    "title": "The app prevents leakage of sensitive data.",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [],
+    "surfaces": [
+      "MOBILE"
+    ],
+    "keywords": [
+      "sensitive data leakage",
+      "privacy leakage"
+    ],
+    "explanation": "The finding may indicate that the cited MASVS control should be reviewed.",
+    "officialUrl": "https://mas.owasp.org/MASVS/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "This is not an attestation that the application passes or fails MASVS."
+  },
+  {
+    "framework": "OWASP MASVS",
+    "frameworkVersion": "2.1.0",
+    "identifier": "MASVS-AUTH-1",
+    "title": "The app uses secure authentication and authorization protocols and follows the relevant best practices.",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [
+      "CWE-307",
+      "CWE-639"
+    ],
+    "surfaces": [
+      "MOBILE"
+    ],
+    "keywords": [
+      "insecure authentication",
+      "insecure authorization"
+    ],
+    "explanation": "The finding may indicate that the cited MASVS control should be reviewed.",
+    "officialUrl": "https://mas.owasp.org/MASVS/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "This is not an attestation that the application passes or fails MASVS."
+  },
+  {
+    "framework": "OWASP MASVS",
+    "frameworkVersion": "2.1.0",
+    "identifier": "MASVS-NETWORK-1",
+    "title": "The app secures all network traffic according to the current best practices.",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [],
+    "surfaces": [
+      "MOBILE"
+    ],
+    "keywords": [
+      "insecure communication",
+      "cleartext traffic"
+    ],
+    "explanation": "The finding may indicate that the cited MASVS control should be reviewed.",
+    "officialUrl": "https://mas.owasp.org/MASVS/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "This is not an attestation that the application passes or fails MASVS."
+  },
+  {
+    "framework": "OWASP MASVS",
+    "frameworkVersion": "2.1.0",
+    "identifier": "MASVS-CODE-3",
+    "title": "The app only uses software components without known vulnerabilities.",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [
+      "CWE-1104"
+    ],
+    "surfaces": [
+      "MOBILE"
+    ],
+    "keywords": [
+      "vulnerable component",
+      "outdated component"
+    ],
+    "explanation": "The finding may indicate that the cited MASVS control should be reviewed.",
+    "officialUrl": "https://mas.owasp.org/MASVS/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "This is not an attestation that the application passes or fails MASVS."
+  },
+  {
+    "framework": "OWASP MASVS",
+    "frameworkVersion": "2.1.0",
+    "identifier": "MASVS-CODE-4",
+    "title": "The app validates and sanitizes all untrusted inputs.",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [
+      "CWE-20",
+      "CWE-79",
+      "CWE-89"
+    ],
+    "surfaces": [
+      "MOBILE"
+    ],
+    "keywords": [
+      "insufficient input validation"
+    ],
+    "explanation": "The finding may indicate that the cited MASVS control should be reviewed.",
+    "officialUrl": "https://mas.owasp.org/MASVS/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "This is not an attestation that the application passes or fails MASVS."
+  },
+  {
+    "framework": "OWASP MASVS",
+    "frameworkVersion": "2.1.0",
+    "identifier": "MASVS-RESILIENCE-2",
+    "title": "The app implements anti-tampering mechanisms.",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [],
+    "surfaces": [
+      "MOBILE"
+    ],
+    "keywords": [
+      "binary tampering",
+      "anti-tampering"
+    ],
+    "explanation": "The finding may indicate that the cited MASVS control should be reviewed.",
+    "officialUrl": "https://mas.owasp.org/MASVS/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "This is not an attestation that the application passes or fails MASVS."
+  },
+  {
+    "framework": "OWASP MASVS",
+    "frameworkVersion": "2.1.0",
+    "identifier": "MASVS-PRIVACY-1",
+    "title": "The app minimizes access to sensitive data and resources.",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [],
+    "surfaces": [
+      "MOBILE"
+    ],
+    "keywords": [
+      "excessive data access",
+      "privacy leakage"
+    ],
+    "explanation": "The finding may indicate that the cited MASVS control should be reviewed.",
+    "officialUrl": "https://mas.owasp.org/MASVS/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "This is not an attestation that the application passes or fails MASVS."
+  },
+  {
+    "framework": "OWASP ASVS",
+    "frameworkVersion": "5.0.0",
+    "identifier": "v5.0.0-1.2.1",
+    "title": "Verify that output encoding for an HTTP response, HTML document, or XML document is relevant for the context required, such as encoding the relevant characters for HTML elements, HTML attributes, HTML comments, CSS, or HTTP header fields, to avoid changing the message or document structure.",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [
+      "CWE-79"
+    ],
+    "surfaces": [
+      "WEB",
+      "API"
+    ],
+    "keywords": [
+      "cross-site scripting",
+      "xss"
+    ],
+    "explanation": "The finding may be relevant to review against this stable ASVS requirement.",
+    "officialUrl": "https://github.com/OWASP/ASVS/releases/tag/v5.0.0_release",
+    "verifiedDate": "2026-08-06",
+    "limitations": "A single finding cannot establish ASVS level or application-wide conformance."
+  },
+  {
+    "framework": "OWASP ASVS",
+    "frameworkVersion": "5.0.0",
+    "identifier": "v5.0.0-1.2.4",
+    "title": "Verify that data selection or database queries (e.g., SQL, HQL, NoSQL, Cypher) use parameterized queries, ORMs, entity frameworks, or are otherwise protected from SQL Injection and other database injection attacks. This is also relevant when writing stored procedures.",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [
+      "CWE-89"
+    ],
+    "surfaces": [
+      "WEB",
+      "API"
+    ],
+    "keywords": [
+      "sql injection"
+    ],
+    "explanation": "The finding may be relevant to review against this stable ASVS requirement.",
+    "officialUrl": "https://github.com/OWASP/ASVS/releases/tag/v5.0.0_release",
+    "verifiedDate": "2026-08-06",
+    "limitations": "A single finding cannot establish ASVS level or application-wide conformance."
+  },
+  {
+    "framework": "OWASP ASVS",
+    "frameworkVersion": "5.0.0",
+    "identifier": "v5.0.0-1.3.6",
+    "title": "Verify that the application protects against Server-side Request Forgery (SSRF) attacks, by validating untrusted data against an allowlist of protocols, domains, paths and ports and sanitizing potentially dangerous characters before using the data to call another service.",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [
+      "CWE-918"
+    ],
+    "surfaces": [
+      "WEB",
+      "API"
+    ],
+    "keywords": [
+      "server-side request forgery",
+      "ssrf"
+    ],
+    "explanation": "The finding may be relevant to review against this stable ASVS requirement.",
+    "officialUrl": "https://github.com/OWASP/ASVS/releases/tag/v5.0.0_release",
+    "verifiedDate": "2026-08-06",
+    "limitations": "A single finding cannot establish ASVS level or application-wide conformance."
+  },
+  {
+    "framework": "OWASP ASVS",
+    "frameworkVersion": "5.0.0",
+    "identifier": "v5.0.0-1.5.2",
+    "title": "Verify that deserialization of untrusted data enforces safe input handling, such as using an allowlist of object types or restricting client-defined object types, to prevent deserialization attacks. Deserialization mechanisms that are explicitly defined as insecure must not be used with untrusted input.",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [
+      "CWE-502"
+    ],
+    "surfaces": [
+      "WEB",
+      "API"
+    ],
+    "keywords": [
+      "unsafe deserialization"
+    ],
+    "explanation": "The finding may be relevant to review against this stable ASVS requirement.",
+    "officialUrl": "https://github.com/OWASP/ASVS/releases/tag/v5.0.0_release",
+    "verifiedDate": "2026-08-06",
+    "limitations": "A single finding cannot establish ASVS level or application-wide conformance."
+  },
+  {
+    "framework": "OWASP ASVS",
+    "frameworkVersion": "5.0.0",
+    "identifier": "v5.0.0-8.2.2",
+    "title": "Verify that the application ensures that data-specific access is restricted to consumers with explicit permissions to specific data items to mitigate insecure direct object reference (IDOR) and broken object level authorization (BOLA).",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [
+      "CWE-639"
+    ],
+    "surfaces": [
+      "WEB",
+      "API"
+    ],
+    "keywords": [
+      "idor",
+      "bola"
+    ],
+    "explanation": "The finding may be relevant to review against this stable ASVS requirement.",
+    "officialUrl": "https://github.com/OWASP/ASVS/releases/tag/v5.0.0_release",
+    "verifiedDate": "2026-08-06",
+    "limitations": "A single finding cannot establish ASVS level or application-wide conformance."
+  },
+  {
+    "framework": "OWASP ASVS",
+    "frameworkVersion": "5.0.0",
+    "identifier": "v5.0.0-16.3.2",
+    "title": "Verify that failed authorization attempts are logged. For L3, this must include logging all authorization decisions, including logging when sensitive data is accessed (without logging the sensitive data itself).",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [],
+    "surfaces": [
+      "WEB",
+      "API"
+    ],
+    "keywords": [
+      "failed authorization not logged"
+    ],
+    "explanation": "The finding may be relevant to review against this stable ASVS requirement.",
+    "officialUrl": "https://github.com/OWASP/ASVS/releases/tag/v5.0.0_release",
+    "verifiedDate": "2026-08-06",
+    "limitations": "A single finding cannot establish ASVS level or application-wide conformance."
+  },
+  {
+    "framework": "OWASP GenAI/LLM Top 10",
+    "frameworkVersion": "2025",
+    "identifier": "LLM01:2025",
+    "title": "Prompt Injection",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [],
+    "surfaces": [
+      "AI_ML_LLM"
+    ],
+    "keywords": [
+      "prompt injection",
+      "indirect prompt injection"
+    ],
+    "explanation": "Project-curated correlation scoped to an AI/ML/LLM finding.",
+    "officialUrl": "https://genai.owasp.org/llm-top-10/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "The OWASP list is risk guidance; this result is not a safety certification."
+  },
+  {
+    "framework": "OWASP GenAI/LLM Top 10",
+    "frameworkVersion": "2025",
+    "identifier": "LLM02:2025",
+    "title": "Sensitive Information Disclosure",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [],
+    "surfaces": [
+      "AI_ML_LLM"
+    ],
+    "keywords": [
+      "llm sensitive information disclosure",
+      "model data leakage"
+    ],
+    "explanation": "Project-curated correlation scoped to an AI/ML/LLM finding.",
+    "officialUrl": "https://genai.owasp.org/llm-top-10/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "The OWASP list is risk guidance; this result is not a safety certification."
+  },
+  {
+    "framework": "OWASP GenAI/LLM Top 10",
+    "frameworkVersion": "2025",
+    "identifier": "LLM03:2025",
+    "title": "Supply Chain",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [],
+    "surfaces": [
+      "AI_ML_LLM"
+    ],
+    "keywords": [
+      "llm supply chain",
+      "ai supply chain"
+    ],
+    "explanation": "Project-curated correlation scoped to an AI/ML/LLM finding.",
+    "officialUrl": "https://genai.owasp.org/llm-top-10/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "The OWASP list is risk guidance; this result is not a safety certification."
+  },
+  {
+    "framework": "OWASP GenAI/LLM Top 10",
+    "frameworkVersion": "2025",
+    "identifier": "LLM04:2025",
+    "title": "Data and Model Poisoning",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [],
+    "surfaces": [
+      "AI_ML_LLM"
+    ],
+    "keywords": [
+      "data poisoning",
+      "model poisoning"
+    ],
+    "explanation": "Project-curated correlation scoped to an AI/ML/LLM finding.",
+    "officialUrl": "https://genai.owasp.org/llm-top-10/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "The OWASP list is risk guidance; this result is not a safety certification."
+  },
+  {
+    "framework": "OWASP GenAI/LLM Top 10",
+    "frameworkVersion": "2025",
+    "identifier": "LLM05:2025",
+    "title": "Improper Output Handling",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [],
+    "surfaces": [
+      "AI_ML_LLM"
+    ],
+    "keywords": [
+      "improper output handling",
+      "unsafe llm output"
+    ],
+    "explanation": "Project-curated correlation scoped to an AI/ML/LLM finding.",
+    "officialUrl": "https://genai.owasp.org/llm-top-10/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "The OWASP list is risk guidance; this result is not a safety certification."
+  },
+  {
+    "framework": "OWASP GenAI/LLM Top 10",
+    "frameworkVersion": "2025",
+    "identifier": "LLM06:2025",
+    "title": "Excessive Agency",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [],
+    "surfaces": [
+      "AI_ML_LLM"
+    ],
+    "keywords": [
+      "excessive agency"
+    ],
+    "explanation": "Project-curated correlation scoped to an AI/ML/LLM finding.",
+    "officialUrl": "https://genai.owasp.org/llm-top-10/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "The OWASP list is risk guidance; this result is not a safety certification."
+  },
+  {
+    "framework": "OWASP GenAI/LLM Top 10",
+    "frameworkVersion": "2025",
+    "identifier": "LLM07:2025",
+    "title": "System Prompt Leakage",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [],
+    "surfaces": [
+      "AI_ML_LLM"
+    ],
+    "keywords": [
+      "system prompt leakage"
+    ],
+    "explanation": "Project-curated correlation scoped to an AI/ML/LLM finding.",
+    "officialUrl": "https://genai.owasp.org/llm-top-10/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "The OWASP list is risk guidance; this result is not a safety certification."
+  },
+  {
+    "framework": "OWASP GenAI/LLM Top 10",
+    "frameworkVersion": "2025",
+    "identifier": "LLM08:2025",
+    "title": "Vector and Embedding Weaknesses",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [],
+    "surfaces": [
+      "AI_ML_LLM"
+    ],
+    "keywords": [
+      "embedding weakness",
+      "vector database weakness"
+    ],
+    "explanation": "Project-curated correlation scoped to an AI/ML/LLM finding.",
+    "officialUrl": "https://genai.owasp.org/llm-top-10/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "The OWASP list is risk guidance; this result is not a safety certification."
+  },
+  {
+    "framework": "OWASP GenAI/LLM Top 10",
+    "frameworkVersion": "2025",
+    "identifier": "LLM09:2025",
+    "title": "Misinformation",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [],
+    "surfaces": [
+      "AI_ML_LLM"
+    ],
+    "keywords": [
+      "llm misinformation"
+    ],
+    "explanation": "Project-curated correlation scoped to an AI/ML/LLM finding.",
+    "officialUrl": "https://genai.owasp.org/llm-top-10/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "The OWASP list is risk guidance; this result is not a safety certification."
+  },
+  {
+    "framework": "OWASP GenAI/LLM Top 10",
+    "frameworkVersion": "2025",
+    "identifier": "LLM10:2025",
+    "title": "Unbounded Consumption",
+    "relationType": "CURATED_CORRELATION",
+    "cweIds": [],
+    "surfaces": [
+      "AI_ML_LLM"
+    ],
+    "keywords": [
+      "unbounded consumption",
+      "denial of wallet"
+    ],
+    "explanation": "Project-curated correlation scoped to an AI/ML/LLM finding.",
+    "officialUrl": "https://genai.owasp.org/llm-top-10/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "The OWASP list is risk guidance; this result is not a safety certification."
+  },
+  {
+    "framework": "MITRE ATT&CK Enterprise",
+    "frameworkVersion": "19.1",
+    "identifier": "T1190",
+    "title": "Exploit Public-Facing Application",
+    "relationType": "CONTEXTUAL_ENABLEMENT",
+    "cweIds": [
+      "CWE-79",
+      "CWE-89",
+      "CWE-918"
+    ],
+    "surfaces": [
+      "WEB",
+      "API",
+      "ENTERPRISE"
+    ],
+    "keywords": [
+      "exploit public-facing application"
+    ],
+    "explanation": "The weakness could provide context that enables this adversary behavior; it is not evidence that the technique occurred.",
+    "officialUrl": "https://attack.mitre.org/techniques/T1190/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "ATT&CK describes adversary behavior. A vulnerability-to-technique link is contextual and project-curated."
+  },
+  {
+    "framework": "MITRE ATT&CK Enterprise",
+    "frameworkVersion": "19.1",
+    "identifier": "T1110.004",
+    "title": "Credential Stuffing",
+    "relationType": "CONTEXTUAL_ENABLEMENT",
+    "cweIds": [
+      "CWE-307"
+    ],
+    "surfaces": [
+      "ENTERPRISE",
+      "FRAUD"
+    ],
+    "keywords": [
+      "credential stuffing"
+    ],
+    "explanation": "The weakness could provide context that enables this adversary behavior; it is not evidence that the technique occurred.",
+    "officialUrl": "https://attack.mitre.org/techniques/T1110/004/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "ATT&CK describes adversary behavior. A vulnerability-to-technique link is contextual and project-curated."
+  },
+  {
+    "framework": "MITRE ATT&CK Enterprise",
+    "frameworkVersion": "19.1",
+    "identifier": "T1056",
+    "title": "Input Capture",
+    "relationType": "CONTEXTUAL_ENABLEMENT",
+    "cweIds": [],
+    "surfaces": [
+      "ENTERPRISE",
+      "WEB"
+    ],
+    "keywords": [
+      "input capture"
+    ],
+    "explanation": "The weakness could provide context that enables this adversary behavior; it is not evidence that the technique occurred.",
+    "officialUrl": "https://attack.mitre.org/techniques/T1056/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "ATT&CK describes adversary behavior. A vulnerability-to-technique link is contextual and project-curated."
+  },
+  {
+    "framework": "MITRE ATT&CK Mobile",
+    "frameworkVersion": "19.1",
+    "identifier": "T1645",
+    "title": "Compromise Client Software Binary",
+    "relationType": "CONTEXTUAL_ENABLEMENT",
+    "cweIds": [],
+    "surfaces": [
+      "MOBILE"
+    ],
+    "keywords": [
+      "compromise client software binary",
+      "binary tampering"
+    ],
+    "explanation": "The weakness could provide context that enables this adversary behavior; it is not evidence that the technique occurred.",
+    "officialUrl": "https://attack.mitre.org/techniques/T1645/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "ATT&CK describes adversary behavior. A vulnerability-to-technique link is contextual and project-curated."
+  },
+  {
+    "framework": "MITRE ATT&CK Mobile",
+    "frameworkVersion": "19.1",
+    "identifier": "T1428",
+    "title": "Exploitation of Remote Services",
+    "relationType": "CONTEXTUAL_ENABLEMENT",
+    "cweIds": [],
+    "surfaces": [
+      "MOBILE"
+    ],
+    "keywords": [
+      "exploitation of remote services"
+    ],
+    "explanation": "The weakness could provide context that enables this adversary behavior; it is not evidence that the technique occurred.",
+    "officialUrl": "https://attack.mitre.org/techniques/T1428/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "ATT&CK describes adversary behavior. A vulnerability-to-technique link is contextual and project-curated."
+  },
+  {
+    "framework": "MITRE ATT&CK ICS",
+    "frameworkVersion": "19.1",
+    "identifier": "T0819",
+    "title": "Exploit Public-Facing Application",
+    "relationType": "CONTEXTUAL_ENABLEMENT",
+    "cweIds": [
+      "CWE-79",
+      "CWE-89",
+      "CWE-918"
+    ],
+    "surfaces": [
+      "ICS_OT"
+    ],
+    "keywords": [
+      "exploit public-facing application"
+    ],
+    "explanation": "The weakness could provide context that enables this adversary behavior; it is not evidence that the technique occurred.",
+    "officialUrl": "https://attack.mitre.org/techniques/T0819/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "ATT&CK describes adversary behavior. A vulnerability-to-technique link is contextual and project-curated."
+  },
+  {
+    "framework": "MITRE ATT&CK ICS",
+    "frameworkVersion": "19.1",
+    "identifier": "T0866",
+    "title": "Exploitation of Remote Services",
+    "relationType": "CONTEXTUAL_ENABLEMENT",
+    "cweIds": [],
+    "surfaces": [
+      "ICS_OT"
+    ],
+    "keywords": [
+      "exploitation of remote services"
+    ],
+    "explanation": "The weakness could provide context that enables this adversary behavior; it is not evidence that the technique occurred.",
+    "officialUrl": "https://attack.mitre.org/techniques/T0866/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "ATT&CK describes adversary behavior. A vulnerability-to-technique link is contextual and project-curated."
+  },
+  {
+    "framework": "MITRE D3FEND",
+    "frameworkVersion": "1.5.0",
+    "identifier": "D3-CS",
+    "title": "Credential Scrubbing",
+    "relationType": "DEFENSIVE_MITIGATION",
+    "cweIds": [
+      "CWE-798"
+    ],
+    "surfaces": [
+      "GENERIC_UNKNOWN",
+      "MOBILE",
+      "ENTERPRISE"
+    ],
+    "keywords": [
+      "hard-coded credentials",
+      "credential exposure"
+    ],
+    "explanation": "This D3FEND technique may be considered as part of a defense design review.",
+    "officialUrl": "https://d3fend.mitre.org/ontologies/d3fend/1.5.0/d3fend.csv",
+    "verifiedDate": "2026-08-06",
+    "limitations": "Applicability depends on architecture and does not guarantee remediation."
+  },
+  {
+    "framework": "MITRE D3FEND",
+    "frameworkVersion": "1.5.0",
+    "identifier": "D3-MFA",
+    "title": "Multi-factor Authentication",
+    "relationType": "DEFENSIVE_MITIGATION",
+    "cweIds": [
+      "CWE-307"
+    ],
+    "surfaces": [
+      "WEB",
+      "API",
+      "ENTERPRISE",
+      "FRAUD"
+    ],
+    "keywords": [
+      "credential stuffing",
+      "password spraying"
+    ],
+    "explanation": "This D3FEND technique may be considered as part of a defense design review.",
+    "officialUrl": "https://d3fend.mitre.org/ontologies/d3fend/1.5.0/d3fend.csv",
+    "verifiedDate": "2026-08-06",
+    "limitations": "Applicability depends on architecture and does not guarantee remediation."
+  },
+  {
+    "framework": "MITRE D3FEND",
+    "frameworkVersion": "1.5.0",
+    "identifier": "D3-ANET",
+    "title": "Authentication Event Thresholding",
+    "relationType": "DEFENSIVE_MITIGATION",
+    "cweIds": [
+      "CWE-307"
+    ],
+    "surfaces": [
+      "WEB",
+      "API",
+      "ENTERPRISE",
+      "FRAUD"
+    ],
+    "keywords": [
+      "credential stuffing",
+      "brute force"
+    ],
+    "explanation": "This D3FEND technique may be considered as part of a defense design review.",
+    "officialUrl": "https://d3fend.mitre.org/ontologies/d3fend/1.5.0/d3fend.csv",
+    "verifiedDate": "2026-08-06",
+    "limitations": "Applicability depends on architecture and does not guarantee remediation."
+  },
+  {
+    "framework": "MITRE D3FEND",
+    "frameworkVersion": "1.5.0",
+    "identifier": "D3-NI",
+    "title": "Network Isolation",
+    "relationType": "DEFENSIVE_MITIGATION",
+    "cweIds": [],
+    "surfaces": [
+      "ENTERPRISE",
+      "ICS_OT"
+    ],
+    "keywords": [
+      "network isolation",
+      "network segmentation"
+    ],
+    "explanation": "This D3FEND technique may be considered as part of a defense design review.",
+    "officialUrl": "https://d3fend.mitre.org/ontologies/d3fend/1.5.0/d3fend.csv",
+    "verifiedDate": "2026-08-06",
+    "limitations": "Applicability depends on architecture and does not guarantee remediation."
+  },
+  {
+    "framework": "MITRE D3FEND",
+    "frameworkVersion": "1.5.0",
+    "identifier": "D3-WSAM",
+    "title": "Web Session Access Mediation",
+    "relationType": "DEFENSIVE_MITIGATION",
+    "cweIds": [],
+    "surfaces": [
+      "WEB",
+      "API"
+    ],
+    "keywords": [
+      "session hijacking",
+      "session fixation"
+    ],
+    "explanation": "This D3FEND technique may be considered as part of a defense design review.",
+    "officialUrl": "https://d3fend.mitre.org/ontologies/d3fend/1.5.0/d3fend.csv",
+    "verifiedDate": "2026-08-06",
+    "limitations": "Applicability depends on architecture and does not guarantee remediation."
+  },
+  {
+    "framework": "MITRE ATLAS",
+    "frameworkVersion": "2026.07",
+    "identifier": "AML.T0051",
+    "title": "LLM Prompt Injection",
+    "relationType": "CONTEXTUAL_ENABLEMENT",
+    "cweIds": [],
+    "surfaces": [
+      "AI_ML_LLM"
+    ],
+    "keywords": [
+      "prompt injection",
+      "indirect prompt injection"
+    ],
+    "explanation": "The finding text describes conditions consistent with this ATLAS behavior; this is not proof of adversary activity.",
+    "officialUrl": "https://github.com/mitre-atlas/atlas-data/blob/v2026.07/dist/v6/ATLAS-2026.07.yaml",
+    "verifiedDate": "2026-08-06",
+    "limitations": "ATLAS is an adversary knowledge base. The project does not claim an official vulnerability equivalence."
+  },
+  {
+    "framework": "MITRE ATLAS",
+    "frameworkVersion": "2026.07",
+    "identifier": "AML.T0020",
+    "title": "Training Data Poisoning",
+    "relationType": "CONTEXTUAL_ENABLEMENT",
+    "cweIds": [],
+    "surfaces": [
+      "AI_ML_LLM"
+    ],
+    "keywords": [
+      "training data poisoning",
+      "data poisoning"
+    ],
+    "explanation": "The finding text describes conditions consistent with this ATLAS behavior; this is not proof of adversary activity.",
+    "officialUrl": "https://github.com/mitre-atlas/atlas-data/blob/v2026.07/dist/v6/ATLAS-2026.07.yaml",
+    "verifiedDate": "2026-08-06",
+    "limitations": "ATLAS is an adversary knowledge base. The project does not claim an official vulnerability equivalence."
+  },
+  {
+    "framework": "MITRE ATLAS",
+    "frameworkVersion": "2026.07",
+    "identifier": "AML.T0018.000",
+    "title": "Poison AI Model",
+    "relationType": "CONTEXTUAL_ENABLEMENT",
+    "cweIds": [],
+    "surfaces": [
+      "AI_ML_LLM"
+    ],
+    "keywords": [
+      "model poisoning",
+      "poison ai model"
+    ],
+    "explanation": "The finding text describes conditions consistent with this ATLAS behavior; this is not proof of adversary activity.",
+    "officialUrl": "https://github.com/mitre-atlas/atlas-data/blob/v2026.07/dist/v6/ATLAS-2026.07.yaml",
+    "verifiedDate": "2026-08-06",
+    "limitations": "ATLAS is an adversary knowledge base. The project does not claim an official vulnerability equivalence."
+  },
+  {
+    "framework": "MITRE ATLAS",
+    "frameworkVersion": "2026.07",
+    "identifier": "AML.T0010",
+    "title": "AI Supply Chain Compromise",
+    "relationType": "CONTEXTUAL_ENABLEMENT",
+    "cweIds": [],
+    "surfaces": [
+      "AI_ML_LLM"
+    ],
+    "keywords": [
+      "ai supply chain compromise",
+      "llm supply chain"
+    ],
+    "explanation": "The finding text describes conditions consistent with this ATLAS behavior; this is not proof of adversary activity.",
+    "officialUrl": "https://github.com/mitre-atlas/atlas-data/blob/v2026.07/dist/v6/ATLAS-2026.07.yaml",
+    "verifiedDate": "2026-08-06",
+    "limitations": "ATLAS is an adversary knowledge base. The project does not claim an official vulnerability equivalence."
+  },
+  {
+    "framework": "MITRE ATLAS",
+    "frameworkVersion": "2026.07",
+    "identifier": "AML.T0070",
+    "title": "RAG Poisoning",
+    "relationType": "CONTEXTUAL_ENABLEMENT",
+    "cweIds": [],
+    "surfaces": [
+      "AI_ML_LLM"
+    ],
+    "keywords": [
+      "rag poisoning",
+      "retrieval augmented generation poisoning"
+    ],
+    "explanation": "The finding text describes conditions consistent with this ATLAS behavior; this is not proof of adversary activity.",
+    "officialUrl": "https://github.com/mitre-atlas/atlas-data/blob/v2026.07/dist/v6/ATLAS-2026.07.yaml",
+    "verifiedDate": "2026-08-06",
+    "limitations": "ATLAS is an adversary knowledge base. The project does not claim an official vulnerability equivalence."
+  },
+  {
+    "framework": "MITRE Fight Fraud Framework (F3)",
+    "frameworkVersion": "1.1",
+    "identifier": "T1110.004",
+    "title": "Brute Force:  Credential Stuffing",
+    "relationType": "OFFICIAL_REFERENCE",
+    "cweIds": [
+      "CWE-307"
+    ],
+    "surfaces": [
+      "FRAUD"
+    ],
+    "keywords": [
+      "credential stuffing"
+    ],
+    "explanation": "The fraud context may align with this F3 behavior. F3 means MITRE Fight Fraud Framework in this project.",
+    "officialUrl": "https://github.com/center-for-threat-informed-defense/fight-fraud-framework/blob/1939f92dafd702253874318ee201d6b2ba37a67a/public/f3-v1.1.json",
+    "verifiedDate": "2026-08-06",
+    "limitations": "A technical weakness alone does not establish fraud intent, loss, or actor attribution."
+  },
+  {
+    "framework": "MITRE Fight Fraud Framework (F3)",
+    "frameworkVersion": "1.1",
+    "identifier": "F1006",
+    "title": "Account Takeover",
+    "relationType": "CONTEXTUAL_ENABLEMENT",
+    "cweIds": [],
+    "surfaces": [
+      "FRAUD"
+    ],
+    "keywords": [
+      "account takeover"
+    ],
+    "explanation": "The fraud context may align with this F3 behavior. F3 means MITRE Fight Fraud Framework in this project.",
+    "officialUrl": "https://github.com/center-for-threat-informed-defense/fight-fraud-framework/blob/1939f92dafd702253874318ee201d6b2ba37a67a/public/f3-v1.1.json",
+    "verifiedDate": "2026-08-06",
+    "limitations": "A technical weakness alone does not establish fraud intent, loss, or actor attribution."
+  },
+  {
+    "framework": "MITRE Fight Fraud Framework (F3)",
+    "frameworkVersion": "1.1",
+    "identifier": "F1006.002",
+    "title": "Account Takeover: Exposed Login Credential",
+    "relationType": "CONTEXTUAL_ENABLEMENT",
+    "cweIds": [
+      "CWE-798"
+    ],
+    "surfaces": [
+      "FRAUD"
+    ],
+    "keywords": [
+      "exposed login credential",
+      "credential exposure"
+    ],
+    "explanation": "The fraud context may align with this F3 behavior. F3 means MITRE Fight Fraud Framework in this project.",
+    "officialUrl": "https://github.com/center-for-threat-informed-defense/fight-fraud-framework/blob/1939f92dafd702253874318ee201d6b2ba37a67a/public/f3-v1.1.json",
+    "verifiedDate": "2026-08-06",
+    "limitations": "A technical weakness alone does not establish fraud intent, loss, or actor attribution."
+  },
+  {
+    "framework": "MITRE Fight Fraud Framework (F3)",
+    "frameworkVersion": "1.1",
+    "identifier": "F1031",
+    "title": "Impersonate Account Holder",
+    "relationType": "CONTEXTUAL_ENABLEMENT",
+    "cweIds": [],
+    "surfaces": [
+      "FRAUD"
+    ],
+    "keywords": [
+      "impersonate account holder"
+    ],
+    "explanation": "The fraud context may align with this F3 behavior. F3 means MITRE Fight Fraud Framework in this project.",
+    "officialUrl": "https://github.com/center-for-threat-informed-defense/fight-fraud-framework/blob/1939f92dafd702253874318ee201d6b2ba37a67a/public/f3-v1.1.json",
+    "verifiedDate": "2026-08-06",
+    "limitations": "A technical weakness alone does not establish fraud intent, loss, or actor attribution."
+  }
+]

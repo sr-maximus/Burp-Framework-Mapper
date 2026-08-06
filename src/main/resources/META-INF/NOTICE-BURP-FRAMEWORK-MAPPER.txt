@@ -1,0 +1,9 @@
+Burp Framework Mapper
+Copyright 2026 Edwin Javier Peñuela Camacho
+
+This product includes software developed by the Burp Framework Mapper project.
+
+The names and identifiers of CWE, OWASP, MITRE ATT&CK, MITRE D3FEND, MITRE
+ATLAS, Fight Fraud Framework, CVSS and PortSwigger Montoya remain subject to
+their respective owners' terms. Their inclusion does not imply sponsorship or
+endorsement. See THIRD-PARTY-NOTICES.md and SOURCE_MANIFEST.json in this JAR.

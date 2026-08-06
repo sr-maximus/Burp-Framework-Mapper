@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: Apache-2.0
+* text=auto
+mvnw text eol=lf
+mvnw.cmd text eol=crlf whitespace=-trailing-space
+third_party/RHINO-MPL-2.0.txt text eol=lf whitespace=-trailing-space
+src/main/resources/META-INF/LICENSE-RHINO-MPL-2.0.txt text eol=lf whitespace=-trailing-space
+*.png binary
+*.jar binary
