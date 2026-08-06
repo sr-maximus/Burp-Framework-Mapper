@@ -21,5 +21,7 @@ and the project uses Semantic Versioning.
   checks, CycloneDX SBOM, Dependabot and release automation.
 - Spanish and English usage, methodology, architecture, privacy, threat model,
   risk interpretation and honest Burp manual-validation checklist.
+- Comprehensive Spanish installation, configuration, operation,
+  troubleshooting, update and uninstall manual with explicit creator attribution.
 
 [Unreleased]: https://github.com/sr-maximus/Burp-Framework-Mapper/commits/main

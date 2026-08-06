@@ -11,6 +11,15 @@ y no presenta una correlación como prueba de actividad adversaria o cumplimient
 
 [English documentation](README_EN.md)
 
+## Autoría
+
+**Burp Framework Mapper fue concebido, creado e impulsado por Edwin Javier
+Peñuela Camacho**, creador y propietario del proyecto. CWE, OWASP, MITRE,
+FIRST y PortSwigger aportan marcos, datos o interfaces de terceros; no son
+autores, certificadores, aprobadores ni patrocinadores de esta extensión.
+
+Consulte el [manual completo de instalación, configuración y uso](docs/USER-MANUAL.md).
+
 ## Qué aporta
 
 - Entrada manual completa y envío desde el menú contextual de hallazgos Audit.
@@ -45,6 +54,10 @@ python3 tools/verify_jar.py target/burp-framework-mapper-0.1.0.jar
 El JAR sombreado queda en `target/`. Maven Wrapper descarga Maven 3.9.16 sobre
 HTTPS; Java 21 es obligatorio.
 
+Las instrucciones detalladas para Windows, macOS y Linux, configuración,
+verificación, solución de problemas y desinstalación están en el
+[manual de usuario](docs/USER-MANUAL.md).
+
 ## Uso
 
 1. Abra la pestaña **Framework Mapper**.
@@ -68,7 +81,8 @@ relaciones `CURATED_CORRELATION`, `CONTEXTUAL_ENABLEMENT` y
 `DEFENSIVE_MITIGATION` expresan naturaleza distinta y nunca equivalencia. Un
 resultado vacío es válido. Consulte [metodología](docs/MAPPING-METHODOLOGY.md),
 [cobertura](docs/FRAMEWORK-COVERAGE.md), [fuentes](docs/DATA-SOURCES.md),
-[privacidad](docs/PRIVACY.md) y [validación en Burp](docs/BURP-VALIDATION.md).
+[privacidad](docs/PRIVACY.md), [manual de usuario](docs/USER-MANUAL.md) y
+[validación en Burp](docs/BURP-VALIDATION.md).
 
 ## Actualizar catálogos
 

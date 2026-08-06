@@ -6,6 +6,14 @@ v4.0 references. It does not generate traffic, exploit targets, invoke remote
 services, or present a correlation as evidence of adversary activity or
 compliance.
 
+## Authorship
+
+**Burp Framework Mapper was conceived, created, and driven by Edwin Javier
+Peñuela Camacho**, the project's creator and owner. CWE, OWASP, MITRE, FIRST,
+and PortSwigger provide third-party frameworks, data, or interfaces; they do
+not author, certify, approve, or sponsor this extension. See the comprehensive
+[Spanish installation, configuration, and usage manual](docs/USER-MANUAL.md).
+
 The extension supports manual input and Audit-issue context-menu import,
 surface-aware mapping, explainable confidence, official source links, a
 finding-by-framework correlation matrix, CVSS 4.0, and local JSON, CSV,
