@@ -23,10 +23,7 @@ public final class CweParser {
         for (String token : input.split("[,;\\s]+")) {
             Matcher matcher = CWE.matcher(token.trim());
             if (matcher.matches()) {
-                int number = Integer.parseInt(matcher.group(1));
-                if (number > 0) {
-                    result.add("CWE-" + number);
-                }
+                addCanonical(result, matcher.group(1));
             }
         }
         return new ArrayList<>(result);
@@ -46,11 +43,19 @@ public final class CweParser {
         Set<String> result = new LinkedHashSet<>();
         Matcher matcher = Pattern.compile("(?i)\\bCWE\\s*[-:]?\\s*(\\d{1,5})\\b").matcher(input);
         while (matcher.find()) {
-            int number = Integer.parseInt(matcher.group(1));
+            addCanonical(result, matcher.group(1));
+        }
+        return new ArrayList<>(result);
+    }
+
+    private static void addCanonical(Set<String> result, String digits) {
+        try {
+            int number = Integer.parseInt(digits);
             if (number > 0) {
                 result.add("CWE-" + number);
             }
+        } catch (NumberFormatException ignored) {
+            // Invalid or unexpectedly large user input is ignored rather than escaping the parser.
         }
-        return new ArrayList<>(result);
     }
 }

@@ -24,6 +24,22 @@ prueba de actividad adversaria. No genera tráfico, no envía payloads, no hace
 fuerza bruta, no descarga exploits, no usa telemetría y no transmite hallazgos
 a servicios externos.
 
+### 1.1 Contenido real del catálogo
+
+El catálogo `2026.08.06-1` aporta 86 reglas revisadas: CWE 4.20 (11); OWASP Top
+10 Web 2025 (10), API Security 2023 (10), Mobile 2024 (10), MASVS 2.1.0 (8),
+ASVS 5.0.0 (6) y GenAI/LLM 2025 (10); MITRE ATT&CK 19.1 Enterprise (3), Mobile
+(2) e ICS (2); D3FEND 1.5.0 (5); ATLAS 2026.07 (5); y Fight Fraud Framework
+(F3) 1.1 (4). CVSS 4.0 se calcula mediante la implementación de referencia de
+FIRST.
+
+La combinación permite observar el mismo hallazgo desde cinco ángulos sin
+confundirlos: debilidad, verificación/control, posible contexto adversario,
+defensa y severidad técnica. Los resultados alimentan filtros, detalle de
+trazabilidad, resumen por framework, matriz hallazgo×framework y cuatro formatos
+de exportación. La [tabla de cobertura](FRAMEWORK-COVERAGE.md) declara el alcance
+real y las líneas que intencionalmente no se importan de forma masiva.
+
 ## 2. Usuarios y escenarios previstos
 
 Está orientado a pentesters autorizados, analistas de seguridad, AppSec,

@@ -31,7 +31,6 @@ public final class Cvss40Calculator {
         this.source = loadSource();
     }
 
-    @SuppressWarnings("deprecation") // Rhino 1.9.1 keeps -1 as the documented interpreted mode.
     public CvssResult calculate(String rawVector) {
         String vector = rawVector == null ? "" : rawVector.trim();
         if (vector.isBlank()) {
@@ -44,7 +43,8 @@ public final class Cvss40Calculator {
         Context context = Context.enter();
         try {
             context.setLanguageVersion(Context.VERSION_ES6);
-            context.setOptimizationLevel(-1);
+            context.setInterpretedMode(true);
+            context.setMaximumInterpreterStackDepth(1_000);
             context.setClassShutter(className -> false);
             Scriptable scope = context.initSafeStandardObjects(null, false);
             context.evaluateString(scope, source, "cvss-v4-bundle.js", 1, null);

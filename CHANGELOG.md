@@ -23,5 +23,8 @@ and the project uses Semantic Versioning.
   risk interpretation and honest Burp manual-validation checklist.
 - Comprehensive Spanish installation, configuration, operation,
   troubleshooting, update and uninstall manual with explicit creator attribution.
+- Expanded project overview and GitHub About to expose the complete OWASP,
+  MITRE, CWE, F3 and CVSS scope and its practical defensive value.
+- CodeQL hardening for bounded CWE parsing and the current Rhino interpreted-mode API.
 
 [Unreleased]: https://github.com/sr-maximus/Burp-Framework-Mapper/commits/main

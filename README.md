@@ -4,10 +4,13 @@
 [![CodeQL](https://github.com/sr-maximus/Burp-Framework-Mapper/actions/workflows/codeql.yml/badge.svg)](https://github.com/sr-maximus/Burp-Framework-Mapper/actions/workflows/codeql.yml)
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
 
-Extensión defensiva para Burp Suite que clasifica hallazgos existentes y los
-correlaciona de forma local, determinista y trazable con CWE, OWASP, MITRE y
-CVSS v4.0. No genera tráfico, no explota objetivos, no llama servicios externos
-y no presenta una correlación como prueba de actividad adversaria o cumplimiento.
+Extensión defensiva para Burp Suite que transforma hallazgos existentes —de
+Burp Audit o introducidos manualmente— en un mapa técnico explicable y
+exportable. Correlaciona localmente con CWE; OWASP Web, API, Mobile, MASVS,
+ASVS y GenAI/LLM; MITRE ATT&CK Enterprise, Mobile e ICS; MITRE D3FEND, ATLAS y
+Fight Fraud Framework (F3); y calcula CVSS 4.0 con el algoritmo oficial de
+FIRST. No genera tráfico, no explota objetivos, no llama servicios externos y
+no presenta una correlación como prueba de actividad adversaria o cumplimiento.
 
 [English documentation](README_EN.md)
 
@@ -19,6 +22,32 @@ FIRST y PortSwigger aportan marcos, datos o interfaces de terceros; no son
 autores, certificadores, aprobadores ni patrocinadores de esta extensión.
 
 Consulte el [manual completo de instalación, configuración y uso](docs/USER-MANUAL.md).
+
+## Potencial real
+
+La extensión permite pasar de un hallazgo aislado a una vista común para
+AppSec, pentesting autorizado, gestión de vulnerabilidades, threat-informed
+defense, arquitectura y riesgo. Para cada relación conserva versión,
+identificador, título, naturaleza de la relación, confianza matemática,
+señales, explicación, fuente oficial, fecha, limitaciones y superficie.
+
+| Capacidad | Contenido incluido |
+|---|---|
+| Debilidad raíz | 11 reglas CWE 4.20. |
+| Seguridad Web y API | OWASP Web 2025 (10), API 2023 (10) y ASVS 5.0.0 (6). |
+| Seguridad móvil | OWASP Mobile 2024 (10) y MASVS 2.1.0 (8). |
+| IA generativa | OWASP GenAI/LLM 2025 (10) y MITRE ATLAS 2026.07 (5). |
+| Contexto adversario | ATT&CK 19.1 Enterprise (3), Mobile (2) e ICS (2). |
+| Defensa y fraude | D3FEND 1.5.0 (5) y Fight Fraud Framework/F3 1.1 (4). |
+| Severidad y salida | CVSS 4.0, matriz hallazgo×framework y JSON/CSV/Markdown/SARIF. |
+
+Son 86 reglas curadas, no 86 afirmaciones de equivalencia. La herramienta
+distingue lo declarado por el analista, las referencias oficiales, las
+correlaciones propias del proyecto, el posible contexto de conducta adversaria
+y las mitigaciones defensivas. Esto permite comunicar mejor el hallazgo sin
+inventar evidencia ni convertir el resultado en una certificación. Vea la
+[cobertura exacta](docs/FRAMEWORK-COVERAGE.md) y la
+[metodología](docs/MAPPING-METHODOLOGY.md).
 
 ## Qué aporta
 
