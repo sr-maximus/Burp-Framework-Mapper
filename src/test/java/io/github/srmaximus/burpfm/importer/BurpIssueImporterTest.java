@@ -43,4 +43,21 @@ class BurpIssueImporterTest {
         assertFalse(invoked.contains("collaboratorInteractions"));
         assertTrue(invoked.containsAll(Set.of("name", "detail", "remediation", "baseUrl", "severity", "confidence")));
     }
+
+    @Test
+    void identifiesDigitalAssetSurfaceFromSmartContractSummary() {
+        AuditIssue issue = (AuditIssue) Proxy.newProxyInstance(
+                AuditIssue.class.getClassLoader(), new Class<?>[]{AuditIssue.class}, (proxy, method, arguments) ->
+                        switch (method.getName()) {
+                            case "name" -> "Smart contract reentrancy";
+                            case "detail" -> "A reentrant call can execute before state is updated.";
+                            case "remediation" -> "Apply checks-effects-interactions.";
+                            case "baseUrl" -> "https://example.invalid/contract";
+                            case "severity" -> AuditIssueSeverity.HIGH;
+                            case "confidence" -> AuditIssueConfidence.CERTAIN;
+                            default -> throw new AssertionError("Unexpected sensitive method access: " + method.getName());
+                        });
+
+        assertEquals(Surface.DIGITAL_ASSETS, new BurpIssueImporter().importIssue(issue).surface());
+    }
 }

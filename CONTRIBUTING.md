@@ -33,8 +33,9 @@ Each new or changed mapping needs:
 - regenerated catalog, source-manifest updates when applicable, coverage count
   update and changelog entry.
 
-Avoid broad keywords. ATT&CK, ATLAS and F3 mappings must never claim observed
-activity. D3FEND mappings must never claim control implementation or efficacy.
+Avoid broad keywords. ATT&CK, ATLAS, AADAPT and F3 mappings must never claim
+observed activity. AADAPT mappings must remain scoped to Digital Assets / Web3.
+D3FEND mappings must never claim control implementation or efficacy.
 
 ## Pull requests
 

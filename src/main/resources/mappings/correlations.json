@@ -122,7 +122,8 @@
     "surfaces": [
       "GENERIC_UNKNOWN",
       "MOBILE",
-      "ENTERPRISE"
+      "ENTERPRISE",
+      "DIGITAL_ASSETS"
     ],
     "keywords": [
       "hard-coded credentials",
@@ -192,7 +193,8 @@
       "WEB",
       "API",
       "MOBILE",
-      "ICS_OT"
+      "ICS_OT",
+      "DIGITAL_ASSETS"
     ],
     "keywords": [
       "security misconfiguration",
@@ -217,7 +219,8 @@
       "WEB",
       "API",
       "MOBILE",
-      "AI_ML_LLM"
+      "AI_ML_LLM",
+      "DIGITAL_ASSETS"
     ],
     "keywords": [
       "unmaintained component",
@@ -241,7 +244,8 @@
       "GENERIC_UNKNOWN",
       "WEB",
       "API",
-      "MOBILE"
+      "MOBILE",
+      "DIGITAL_ASSETS"
     ],
     "keywords": [
       "improper input validation",
@@ -1477,6 +1481,203 @@
     "officialUrl": "https://attack.mitre.org/techniques/T0866/",
     "verifiedDate": "2026-08-06",
     "limitations": "ATT&CK describes adversary behavior. A vulnerability-to-technique link is contextual and project-curated."
+  },
+  {
+    "framework": "MITRE AADAPT",
+    "frameworkVersion": "2025.10.31-snapshot",
+    "identifier": "ADT3008",
+    "title": "Exploit External Services",
+    "relationType": "CONTEXTUAL_ENABLEMENT",
+    "cweIds": [],
+    "surfaces": [
+      "DIGITAL_ASSETS"
+    ],
+    "keywords": [
+      "exploit external services",
+      "wallet manager compromise",
+      "payment gateway compromise",
+      "trading platform compromise"
+    ],
+    "explanation": "The digital-asset finding describes a condition that may enable or inform this AADAPT behavior; it is not evidence that an adversary performed the technique.",
+    "officialUrl": "https://aadapt.mitre.org/techniques/ADT3008/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "AADAPT models adversarial behavior in digital asset payment technologies. This vulnerability-to-technique relationship is project-curated, not an official equivalence."
+  },
+  {
+    "framework": "MITRE AADAPT",
+    "frameworkVersion": "2025.10.31-snapshot",
+    "identifier": "ADT1552.004",
+    "title": "Unsecured Credentials: Private Keys",
+    "relationType": "CONTEXTUAL_ENABLEMENT",
+    "cweIds": [],
+    "surfaces": [
+      "DIGITAL_ASSETS"
+    ],
+    "keywords": [
+      "unsecured private key",
+      "exposed private key",
+      "private key leakage",
+      "seed phrase exposure"
+    ],
+    "explanation": "The digital-asset finding describes a condition that may enable or inform this AADAPT behavior; it is not evidence that an adversary performed the technique.",
+    "officialUrl": "https://aadapt.mitre.org/techniques/ADT1552.004/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "AADAPT models adversarial behavior in digital asset payment technologies. This vulnerability-to-technique relationship is project-curated, not an official equivalence."
+  },
+  {
+    "framework": "MITRE AADAPT",
+    "frameworkVersion": "2025.10.31-snapshot",
+    "identifier": "ADT3012.001",
+    "title": "Exploit Smart Contract Implementation: Contract Ownership Changes",
+    "relationType": "CONTEXTUAL_ENABLEMENT",
+    "cweIds": [],
+    "surfaces": [
+      "DIGITAL_ASSETS"
+    ],
+    "keywords": [
+      "contract ownership changes",
+      "smart contract ownership takeover",
+      "unprotected initializer"
+    ],
+    "explanation": "The digital-asset finding describes a condition that may enable or inform this AADAPT behavior; it is not evidence that an adversary performed the technique.",
+    "officialUrl": "https://aadapt.mitre.org/techniques/ADT3012.001/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "AADAPT models adversarial behavior in digital asset payment technologies. This vulnerability-to-technique relationship is project-curated, not an official equivalence."
+  },
+  {
+    "framework": "MITRE AADAPT",
+    "frameworkVersion": "2025.10.31-snapshot",
+    "identifier": "ADT3012.003",
+    "title": "Exploit Smart Contract Implementation: Gas Griefing",
+    "relationType": "CONTEXTUAL_ENABLEMENT",
+    "cweIds": [],
+    "surfaces": [
+      "DIGITAL_ASSETS"
+    ],
+    "keywords": [
+      "gas griefing",
+      "insufficient gas for sub-call"
+    ],
+    "explanation": "The digital-asset finding describes a condition that may enable or inform this AADAPT behavior; it is not evidence that an adversary performed the technique.",
+    "officialUrl": "https://aadapt.mitre.org/techniques/ADT3012.003/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "AADAPT models adversarial behavior in digital asset payment technologies. This vulnerability-to-technique relationship is project-curated, not an official equivalence."
+  },
+  {
+    "framework": "MITRE AADAPT",
+    "frameworkVersion": "2025.10.31-snapshot",
+    "identifier": "ADT3012.004",
+    "title": "Exploit Smart Contract Implementation: Oracle Manipulation",
+    "relationType": "CONTEXTUAL_ENABLEMENT",
+    "cweIds": [],
+    "surfaces": [
+      "DIGITAL_ASSETS"
+    ],
+    "keywords": [
+      "oracle manipulation",
+      "tampered price feed",
+      "manipulated oracle data"
+    ],
+    "explanation": "The digital-asset finding describes a condition that may enable or inform this AADAPT behavior; it is not evidence that an adversary performed the technique.",
+    "officialUrl": "https://aadapt.mitre.org/techniques/ADT3012.004/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "AADAPT models adversarial behavior in digital asset payment technologies. This vulnerability-to-technique relationship is project-curated, not an official equivalence."
+  },
+  {
+    "framework": "MITRE AADAPT",
+    "frameworkVersion": "2025.10.31-snapshot",
+    "identifier": "ADT3012.005",
+    "title": "Exploit Smart Contract Implementation: Reentrancy",
+    "relationType": "CONTEXTUAL_ENABLEMENT",
+    "cweIds": [],
+    "surfaces": [
+      "DIGITAL_ASSETS"
+    ],
+    "keywords": [
+      "reentrancy",
+      "reentrant call"
+    ],
+    "explanation": "The digital-asset finding describes a condition that may enable or inform this AADAPT behavior; it is not evidence that an adversary performed the technique.",
+    "officialUrl": "https://aadapt.mitre.org/techniques/ADT3012.005/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "AADAPT models adversarial behavior in digital asset payment technologies. This vulnerability-to-technique relationship is project-curated, not an official equivalence."
+  },
+  {
+    "framework": "MITRE AADAPT",
+    "frameworkVersion": "2025.10.31-snapshot",
+    "identifier": "ADT3012.006",
+    "title": "Exploit Smart Contract Implementation: Signature Replay Attack",
+    "relationType": "CONTEXTUAL_ENABLEMENT",
+    "cweIds": [],
+    "surfaces": [
+      "DIGITAL_ASSETS"
+    ],
+    "keywords": [
+      "signature replay attack",
+      "cross-chain signature replay"
+    ],
+    "explanation": "The digital-asset finding describes a condition that may enable or inform this AADAPT behavior; it is not evidence that an adversary performed the technique.",
+    "officialUrl": "https://aadapt.mitre.org/techniques/ADT3012.006/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "AADAPT models adversarial behavior in digital asset payment technologies. This vulnerability-to-technique relationship is project-curated, not an official equivalence."
+  },
+  {
+    "framework": "MITRE AADAPT",
+    "frameworkVersion": "2025.10.31-snapshot",
+    "identifier": "ADT3029.002",
+    "title": "Smart Contract Implementation Analysis: Default Visibility Abuse",
+    "relationType": "CONTEXTUAL_ENABLEMENT",
+    "cweIds": [],
+    "surfaces": [
+      "DIGITAL_ASSETS"
+    ],
+    "keywords": [
+      "default visibility abuse",
+      "unintended public function"
+    ],
+    "explanation": "The digital-asset finding describes a condition that may enable or inform this AADAPT behavior; it is not evidence that an adversary performed the technique.",
+    "officialUrl": "https://aadapt.mitre.org/techniques/ADT3029.002/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "AADAPT models adversarial behavior in digital asset payment technologies. This vulnerability-to-technique relationship is project-curated, not an official equivalence."
+  },
+  {
+    "framework": "MITRE AADAPT",
+    "frameworkVersion": "2025.10.31-snapshot",
+    "identifier": "ADT3029.004",
+    "title": "Smart Contract Implementation Analysis: Nondeterministic Component Analysis",
+    "relationType": "CONTEXTUAL_ENABLEMENT",
+    "cweIds": [],
+    "surfaces": [
+      "DIGITAL_ASSETS"
+    ],
+    "keywords": [
+      "nondeterministic component",
+      "predictable random number",
+      "predictable prng"
+    ],
+    "explanation": "The digital-asset finding describes a condition that may enable or inform this AADAPT behavior; it is not evidence that an adversary performed the technique.",
+    "officialUrl": "https://aadapt.mitre.org/techniques/ADT3029.004/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "AADAPT models adversarial behavior in digital asset payment technologies. This vulnerability-to-technique relationship is project-curated, not an official equivalence."
+  },
+  {
+    "framework": "MITRE AADAPT",
+    "frameworkVersion": "2025.10.31-snapshot",
+    "identifier": "ADT3029.006",
+    "title": "Smart Contract Implementation Analysis: Timestamp Dependence Analysis",
+    "relationType": "CONTEXTUAL_ENABLEMENT",
+    "cweIds": [],
+    "surfaces": [
+      "DIGITAL_ASSETS"
+    ],
+    "keywords": [
+      "timestamp dependence",
+      "block timestamp manipulation"
+    ],
+    "explanation": "The digital-asset finding describes a condition that may enable or inform this AADAPT behavior; it is not evidence that an adversary performed the technique.",
+    "officialUrl": "https://aadapt.mitre.org/techniques/ADT3029.006/",
+    "verifiedDate": "2026-08-06",
+    "limitations": "AADAPT models adversarial behavior in digital asset payment technologies. This vulnerability-to-technique relationship is project-curated, not an official equivalence."
   },
   {
     "framework": "MITRE D3FEND",

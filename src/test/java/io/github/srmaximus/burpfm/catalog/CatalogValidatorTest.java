@@ -16,7 +16,7 @@ class CatalogValidatorTest {
     @Test
     void embeddedCatalogHasExpectedCuratedRowsAndUniqueKeys() {
         List<CatalogRule> rules = new CatalogLoader().loadDefault();
-        assertEquals("2026.08.06-1", CatalogLoader.CATALOG_VERSION);
+        assertEquals("2026.08.06-2", CatalogLoader.CATALOG_VERSION);
         assertEquals(CatalogLoader.CURATED_RULE_COUNT, rules.size());
         var keys = new HashSet<String>();
         rules.forEach(rule -> {
@@ -26,6 +26,7 @@ class CatalogValidatorTest {
             assertFalse(rule.limitations().isBlank());
             assertFalse(rule.surfaces().isEmpty());
         });
+        assertEquals(10, rules.stream().filter(rule -> "MITRE AADAPT".equals(rule.framework())).count());
     }
 
     @Test

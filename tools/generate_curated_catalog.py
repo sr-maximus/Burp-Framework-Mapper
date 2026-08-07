@@ -44,12 +44,12 @@ cwe_data = [
     ("CWE-918", "Server-Side Request Forgery (SSRF)", ("server-side request forgery", "ssrf"), ("WEB", "API")),
     ("CWE-639", "Authorization Bypass Through User-Controlled Key", ("broken object level authorization", "bola", "idor"), ("WEB", "API")),
     ("CWE-307", "Improper Restriction of Excessive Authentication Attempts", ("credential stuffing", "password spraying"), ("WEB", "API", "FRAUD")),
-    ("CWE-798", "Use of Hard-coded Credentials", ("hard-coded credentials", "hardcoded credentials"), ("GENERIC_UNKNOWN", "MOBILE", "ENTERPRISE")),
+    ("CWE-798", "Use of Hard-coded Credentials", ("hard-coded credentials", "hardcoded credentials"), ("GENERIC_UNKNOWN", "MOBILE", "ENTERPRISE", "DIGITAL_ASSETS")),
     ("CWE-502", "Deserialization of Untrusted Data", ("unsafe deserialization", "deserialization of untrusted data"), ("WEB", "API", "ENTERPRISE")),
     ("CWE-22", "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')", ("path traversal",), ("WEB", "API", "MOBILE")),
-    ("CWE-16", "Configuration", ("security misconfiguration", "insecure configuration"), ("GENERIC_UNKNOWN", "WEB", "API", "MOBILE", "ICS_OT")),
-    ("CWE-1104", "Use of Unmaintained Third Party Components", ("unmaintained component", "outdated component"), ("GENERIC_UNKNOWN", "WEB", "API", "MOBILE", "AI_ML_LLM")),
-    ("CWE-20", "Improper Input Validation", ("improper input validation", "insufficient input validation"), ("GENERIC_UNKNOWN", "WEB", "API", "MOBILE")),
+    ("CWE-16", "Configuration", ("security misconfiguration", "insecure configuration"), ("GENERIC_UNKNOWN", "WEB", "API", "MOBILE", "ICS_OT", "DIGITAL_ASSETS")),
+    ("CWE-1104", "Use of Unmaintained Third Party Components", ("unmaintained component", "outdated component"), ("GENERIC_UNKNOWN", "WEB", "API", "MOBILE", "AI_ML_LLM", "DIGITAL_ASSETS")),
+    ("CWE-20", "Improper Input Validation", ("improper input validation", "insufficient input validation"), ("GENERIC_UNKNOWN", "WEB", "API", "MOBILE", "DIGITAL_ASSETS")),
 ]
 for identifier, title, keywords, surfaces in cwe_data:
     number = identifier.split("-")[1]
@@ -182,6 +182,36 @@ for framework, identifier, title, surfaces, keywords, cwes in attack_data:
                      "The weakness could provide context that enables this adversary behavior; it is not evidence that the technique occurred.",
                      f"https://attack.mitre.org/techniques/{identifier.replace('.', '/')}/",
                      "ATT&CK describes adversary behavior. A vulnerability-to-technique link is contextual and project-curated."))
+
+# MITRE AADAPT website snapshot 2025.10.31. AADAPT is complementary to ATT&CK
+# for digital asset payment technologies. These project-authored correlations
+# are scoped to Digital Assets / Web3 and never assert observed adversary action.
+aadapt_data = [
+    ("ADT3008", "Exploit External Services", ("exploit external services", "wallet manager compromise", "payment gateway compromise", "trading platform compromise")),
+    ("ADT1552.004", "Unsecured Credentials: Private Keys", ("unsecured private key", "exposed private key", "private key leakage", "seed phrase exposure")),
+    ("ADT3012.001", "Exploit Smart Contract Implementation: Contract Ownership Changes", ("contract ownership changes", "smart contract ownership takeover", "unprotected initializer")),
+    ("ADT3012.003", "Exploit Smart Contract Implementation: Gas Griefing", ("gas griefing", "insufficient gas for sub-call")),
+    ("ADT3012.004", "Exploit Smart Contract Implementation: Oracle Manipulation", ("oracle manipulation", "tampered price feed", "manipulated oracle data")),
+    ("ADT3012.005", "Exploit Smart Contract Implementation: Reentrancy", ("reentrancy", "reentrant call")),
+    ("ADT3012.006", "Exploit Smart Contract Implementation: Signature Replay Attack", ("signature replay attack", "cross-chain signature replay")),
+    ("ADT3029.002", "Smart Contract Implementation Analysis: Default Visibility Abuse", ("default visibility abuse", "unintended public function")),
+    ("ADT3029.004", "Smart Contract Implementation Analysis: Nondeterministic Component Analysis", ("nondeterministic component", "predictable random number", "predictable prng")),
+    ("ADT3029.006", "Smart Contract Implementation Analysis: Timestamp Dependence Analysis", ("timestamp dependence", "block timestamp manipulation")),
+]
+for identifier, title, keywords in aadapt_data:
+    rows.append(rule(
+        "MITRE AADAPT", "2025.10.31-snapshot", identifier, title,
+        "CONTEXTUAL_ENABLEMENT", ("DIGITAL_ASSETS",), keywords,
+        explanation=(
+            "The digital-asset finding describes a condition that may enable or inform this "
+            "AADAPT behavior; it is not evidence that an adversary performed the technique."
+        ),
+        url=f"https://aadapt.mitre.org/techniques/{identifier}/",
+        limitations=(
+            "AADAPT models adversarial behavior in digital asset payment technologies. "
+            "This vulnerability-to-technique relationship is project-curated, not an official equivalence."
+        ),
+    ))
 
 # D3FEND Ontology 1.5.0 defensive techniques.
 d3_url = "https://d3fend.mitre.org/ontologies/d3fend/1.5.0/d3fend.csv"

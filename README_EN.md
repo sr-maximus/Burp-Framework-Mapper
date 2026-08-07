@@ -4,7 +4,7 @@ Burp Framework Mapper is a defensive Burp Suite extension that turns existing
 Burp Audit or manually entered findings into an explainable, exportable
 technical map. It correlates locally with CWE; OWASP Web, API, Mobile, MASVS,
 ASVS and GenAI/LLM; MITRE ATT&CK Enterprise, Mobile and ICS; MITRE D3FEND,
-ATLAS and Fight Fraud Framework (F3); and calculates CVSS 4.0 with FIRST's
+ATLAS, AADAPT and Fight Fraud Framework (F3); and calculates CVSS 4.0 with FIRST's
 official algorithm. It does not generate traffic, exploit targets, invoke
 remote services, or present a correlation as evidence of adversary activity
 or compliance.
@@ -19,10 +19,11 @@ not author, certify, approve, or sponsor this extension. See the comprehensive
 
 ## What it actually provides
 
-The curated catalog contains 86 explainable rules: CWE 4.20 (11); OWASP Web
+The curated catalog contains 96 explainable rules: CWE 4.20 (11); OWASP Web
 2025 (10), API 2023 (10), Mobile 2024 (10), MASVS 2.1.0 (8), ASVS 5.0.0 (6)
 and GenAI/LLM 2025 (10); ATT&CK 19.1 Enterprise (3), Mobile (2) and ICS (2);
-D3FEND 1.5.0 (5); ATLAS 2026.07 (5); and F3 1.1 (4). Results preserve the
+D3FEND 1.5.0 (5); ATLAS 2026.07 (5); AADAPT 2025.10.31-snapshot (10); and F3
+1.1 (4). Results preserve the
 relationship type, deterministic confidence, matched signals, rationale,
 official source, verification date, limitations and surface. Filters, a
 finding-by-framework matrix and JSON/CSV/Markdown/SARIF exports help AppSec,
@@ -32,7 +33,7 @@ teams share one traceable view without turning correlation into certification.
 The extension supports manual input and Audit-issue context-menu import,
 surface-aware mapping, explainable confidence, official source links, a
 finding-by-framework correlation matrix, CVSS 4.0, and local JSON, CSV,
-Markdown and SARIF 2.1.0 exports. The embedded catalog is a reviewed 86-rule
+Markdown and SARIF 2.1.0 exports. The embedded catalog is a reviewed 96-rule
 subset, not a complete mirror of any framework.
 
 ## Install

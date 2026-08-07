@@ -17,6 +17,14 @@ Treat the output as structured review support.
 `DEFENSIVE_MITIGATION` does not mean a control is deployed or effective.
 OWASP/ASVS/MASVS correlations do not constitute compliance.
 
+For MITRE AADAPT specifically, treat the result as a project-curated lens for
+digital-asset payment technologies. It can help investigate smart contracts,
+wallets, private keys, oracles, signatures and blockchain components, but it
+does not establish malicious execution, attribution, impact, compromise or an
+official MITRE equivalence. Validate the selected `Digital Assets / Web3`
+surface and open the official technique link before using the result in a risk
+decision.
+
 CVSS 4.0 is displayed separately from Burp severity and confidence because they
 answer different questions. A technically high score can still have limited
 business impact, and a lower technical score can be material on a critical

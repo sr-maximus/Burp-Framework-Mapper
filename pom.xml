@@ -9,7 +9,7 @@
     <artifactId>burp-framework-mapper</artifactId>
     <version>0.1.0</version>
     <name>Burp Framework Mapper</name>
-    <description>Local, deterministic framework correlation for existing Burp Suite findings.</description>
+    <description>Local, deterministic correlation of existing Burp Suite findings with CWE, OWASP, MITRE including AADAPT, F3 and CVSS 4.0.</description>
     <url>https://github.com/sr-maximus/Burp-Framework-Mapper</url>
 
     <licenses>

@@ -10,6 +10,7 @@ public enum Surface {
     AI_ML_LLM("AI/ML/LLM"),
     ENTERPRISE("Enterprise"),
     ICS_OT("ICS/OT"),
+    DIGITAL_ASSETS("Digital Assets / Web3"),
     FRAUD("Fraud"),
     GENERIC_UNKNOWN("Generic/Unknown");
 

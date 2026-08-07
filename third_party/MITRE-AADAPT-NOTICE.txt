@@ -1,0 +1,18 @@
+MITRE AADAPT Terms of Use notice
+
+Official terms: https://aadapt.mitre.org/resources/terms/
+Official framework: https://aadapt.mitre.org/
+
+Required designation:
+© 2025 The MITRE Corporation. This work is reproduced and distributed with the
+permission of The MITRE Corporation.
+
+The official terms grant a non-exclusive, royalty-free license for internal
+business and commercial use, copying, and derivative works, subject to the
+conditions published by MITRE. Those conditions include reproducing the
+designation and license notice and notifying aadapt@mitre.org of the use. Refer
+to the official URL above for the complete controlling terms and disclaimers.
+
+AADAPT™ and MITRE AADAPT™ are trademarks of The MITRE Corporation. Burp
+Framework Mapper is independently authored by Edwin Javier Peñuela Camacho.
+MITRE does not author, certify, approve, or sponsor this project.

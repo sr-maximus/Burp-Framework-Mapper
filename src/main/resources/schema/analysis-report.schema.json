@@ -16,7 +16,7 @@
   "$defs": {
     "stringList": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
     "surface": {
-      "enum": ["WEB", "API", "MOBILE", "AI_ML_LLM", "ENTERPRISE", "ICS_OT", "FRAUD", "GENERIC_UNKNOWN"]
+      "enum": ["WEB", "API", "MOBILE", "AI_ML_LLM", "ENTERPRISE", "ICS_OT", "DIGITAL_ASSETS", "FRAUD", "GENERIC_UNKNOWN"]
     },
     "finding": {
       "type": "object",

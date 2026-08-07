@@ -7,8 +7,8 @@ the version has been tagged or released; see `docs/BURP-VALIDATION.md`.
 Highlights:
 
 - Java 21 / Montoya 2026.7 suite tab and Audit-issue summary import;
-- 86 reviewed, surface-aware correlations across CWE, OWASP, MITRE ATT&CK,
-  D3FEND, ATLAS and F3;
+- 96 reviewed, surface-aware correlations across CWE, OWASP, MITRE ATT&CK,
+  D3FEND, ATLAS, AADAPT and F3;
 - official FIRST CVSS 4.0 calculation;
 - explainable confidence, sources and explicit limitations;
 - JSON, CSV, Markdown and SARIF 2.1.0 local exports;

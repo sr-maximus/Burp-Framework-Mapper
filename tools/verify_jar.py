@@ -23,6 +23,7 @@ REQUIRED = {
     "META-INF/NOTICE-BURP-FRAMEWORK-MAPPER.txt",
     "META-INF/LICENSE-FIRST-CVSS.txt",
     "META-INF/LICENSE-RHINO-MPL-2.0.txt",
+    "META-INF/LICENSE-MITRE-AADAPT.txt",
     "META-INF/THIRD-PARTY-NOTICES.md",
 }
 FORBIDDEN_PREFIXES = ("burp/api/montoya/", "org/junit/", "org/apache/maven/")

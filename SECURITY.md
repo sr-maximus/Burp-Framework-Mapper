@@ -24,6 +24,8 @@ assess.
 - issue import never accesses HTTP messages or Collaborator interactions;
 - untrusted text is bounded/redacted and exports are injection-aware;
 - catalog/source changes fail closed on schema, count or digest drift;
+- inferred AADAPT results remain isolated to the `Digital Assets / Web3`
+  surface and are qualified as context, never evidence of adversary activity;
 - CVSS input cannot access Java classes through Rhino;
 - framework output is qualified, explainable and subject to human review.
 
