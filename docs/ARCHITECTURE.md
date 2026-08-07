@@ -3,7 +3,9 @@
 Burp Framework Mapper is a single offline Java 21 extension. Montoya is a
 `provided` API boundary; the packaged JAR contains project code, Jackson,
 Rhino, the curated catalog, its source manifest and FIRST's reference CVSS
-JavaScript.
+JavaScript. The catalog includes a dedicated `Digital Assets / Web3` boundary
+for the project-curated MITRE AADAPT subset; AADAPT data is bundled at build
+time and is never fetched by the running extension.
 
 ```mermaid
 flowchart LR
@@ -28,6 +30,9 @@ flowchart LR
 - `CorrelationEngine` has no I/O. It evaluates exact CWE/identifier matches and
   reviewed phrases, enforces surface boundaries, scores signals, deduplicates
   and orders output.
+- MITRE AADAPT rows use `CONTEXTUAL_ENABLEMENT` and are inferred only on the
+  `Digital Assets / Web3` surface. They describe possible digital-asset threat
+  context and never assert that a technique was observed or performed.
 - `Cvss40Calculator` accepts one bounded canonical vector, disables Rhino Java
   class visibility and invokes only the project wrapper around FIRST's reference
   algorithm.
@@ -45,5 +50,6 @@ complete. Catalog loading and CVSS source assembly happen without network I/O.
 
 Maven Shade creates one loadable JAR. Montoya remains `provided` and a separate
 verification script fails if `burp/api/montoya/` is present. CycloneDX creates
-JSON and XML SBOMs. The runtime does not self-update; catalog changes are source
-changes reviewed and released through the normal CI path.
+JSON and XML SBOMs. The JAR also embeds the AADAPT attribution and terms notice.
+The runtime does not self-update; catalog changes are source changes reviewed
+and released through the normal CI path.

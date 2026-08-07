@@ -84,6 +84,28 @@ class CorrelationEngineTest {
     }
 
     @Test
+    void smartContractReentrancyMapsToAadaptOnlyOnDigitalAssetSurface() {
+        AnalysisResult digitalAsset = analyzer.analyze(finding(
+                "Smart contract reentrancy permits a reentrant call", Surface.DIGITAL_ASSETS, List.of()));
+        AnalysisResult web = analyzer.analyze(finding(
+                "Smart contract reentrancy permits a reentrant call", Surface.WEB, List.of()));
+
+        assertTrue(has(digitalAsset, "MITRE AADAPT", "ADT3012.005"));
+        assertFalse(has(web, "MITRE AADAPT", "ADT3012.005"));
+    }
+
+    @Test
+    void explicitAadaptIdentifierIsPreservedForAnalystReview() {
+        AnalysisResult result = analyzer.analyze(finding(
+                "Reviewer asserted ADT3012.004 for follow-up", Surface.WEB, List.of()));
+        var match = result.correlations().stream()
+                .filter(value -> value.framework().equals("MITRE AADAPT")
+                        && value.identifier().equals("ADT3012.004"))
+                .findFirst().orElseThrow();
+        assertEquals(RelationType.INPUT_ASSERTED, match.relationType());
+    }
+
+    @Test
     void insecureMobileStorageMapsToMobileAndMasvs() {
         AnalysisResult result = analyzer.analyze(finding("Sensitive data stored using insecure data storage", Surface.MOBILE, List.of()));
         assertTrue(has(result, "OWASP Mobile Top 10", "M9:2024"));
@@ -108,7 +130,8 @@ class CorrelationEngineTest {
         AnalysisResult result = analyzer.analyze(finding("SQL injection", Surface.WEB, List.of()));
         assertFalse(result.correlations().stream().anyMatch(value ->
                 value.framework().contains("MASVS") || value.framework().contains("Mobile")
-                        || value.framework().contains("ICS")));
+                        || value.framework().contains("ICS")
+                        || value.framework().contains("AADAPT")));
     }
 
     @Test

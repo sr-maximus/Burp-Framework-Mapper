@@ -30,5 +30,5 @@ at runtime.
 ## Explicit non-goals
 
 The extension does not test a target, verify a Burp issue, discover an attacker,
-prove ATT&CK/ATLAS/F3 activity, certify OWASP/ASVS/MASVS compliance or compute
+prove ATT&CK/ATLAS/AADAPT/F3 activity, certify OWASP/ASVS/MASVS compliance or compute
 complete enterprise risk.

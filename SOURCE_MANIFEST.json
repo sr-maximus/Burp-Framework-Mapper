@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "catalogVersion": "2026.08.06-1",
+  "catalogVersion": "2026.08.06-2",
   "generatedAt": "2026-08-06T00:00:00-05:00",
   "project": "Burp Framework Mapper",
   "normalizationPolicy": "Only identifiers, titles, minimum metadata, and project-authored correlations are redistributed. Full upstream datasets are not bundled unless their license and size are suitable.",
@@ -149,6 +149,19 @@
       "domain": "AI/ML adversary behavior",
       "sourceObjectCount": 178,
       "normalizedRuleCount": 5
+    },
+    {
+      "name": "MITRE AADAPT",
+      "version": "2025.10.31-snapshot",
+      "sourceRevision": "Nuxt build 1761932274",
+      "queriedAt": "2026-08-06",
+      "officialUrl": "https://aadapt.mitre.org/_nuxt/static/1761932274/techniques/state.js",
+      "termsUrl": "https://aadapt.mitre.org/resources/terms/",
+      "license": "MITRE AADAPT Terms of Use; attribution and notice required",
+      "sha256": "3d73a74f91f19a5241f7887e4981696e4049d940ccd8c341880fc2696c09a48d",
+      "domain": "Digital asset payment technology adversary behavior",
+      "sourceObjectCount": 68,
+      "normalizedRuleCount": 10
     },
     {
       "name": "MITRE Fight Fraud Framework",

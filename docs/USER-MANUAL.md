@@ -26,10 +26,11 @@ a servicios externos.
 
 ### 1.1 Contenido real del catálogo
 
-El catálogo `2026.08.06-1` aporta 86 reglas revisadas: CWE 4.20 (11); OWASP Top
+El catálogo `2026.08.06-2` aporta 96 reglas revisadas: CWE 4.20 (11); OWASP Top
 10 Web 2025 (10), API Security 2023 (10), Mobile 2024 (10), MASVS 2.1.0 (8),
 ASVS 5.0.0 (6) y GenAI/LLM 2025 (10); MITRE ATT&CK 19.1 Enterprise (3), Mobile
-(2) e ICS (2); D3FEND 1.5.0 (5); ATLAS 2026.07 (5); y Fight Fraud Framework
+(2) e ICS (2); D3FEND 1.5.0 (5); ATLAS 2026.07 (5); AADAPT
+2025.10.31-snapshot (10); y Fight Fraud Framework
 (F3) 1.1 (4). CVSS 4.0 se calcula mediante la implementación de referencia de
 FIRST.
 
@@ -49,6 +50,8 @@ Ejemplos de uso:
 - enriquecer un hallazgo de SQL injection con CWE y controles OWASP aplicables;
 - distinguir BOLA de coincidencias ambiguas en una API;
 - contextualizar prompt injection o poisoning dentro de OWASP GenAI y ATLAS;
+- contextualizar reentrancy, manipulación de oráculos, exposición de claves o
+  replay de firmas dentro de AADAPT, sin afirmar que el comportamiento ocurrió;
 - asociar almacenamiento móvil inseguro con OWASP Mobile y MASVS;
 - documentar una posible técnica ATT&CK sin afirmar que el adversario la ejecutó;
 - proponer una técnica D3FEND como consideración defensiva, no como garantía.
@@ -155,7 +158,7 @@ hallazgo desde el formulario.
 | Description | Condición técnica observada, sin secretos innecesarios. |
 | Evidence | Evidencia mínima y sintética o ya revisada. |
 | Asset / URL | Activo o URL base; evite query strings sensibles. |
-| Surface | Web, API, Mobile, AI/ML/LLM, Enterprise, ICS/OT, Fraud o Generic/Unknown. |
+| Surface | Web, API, Mobile, AI/ML/LLM, Enterprise, ICS/OT, Digital Assets/Web3, Fraud o Generic/Unknown. |
 | CWE | Uno o varios identificadores, separados por coma o espacio. |
 | CVE | Referencia opcional; no altera por sí sola la correlación. |
 | CVSS 4.0 | Vector completo que será validado y puntuado localmente. |
@@ -179,6 +182,7 @@ Seleccione la superficie real del hallazgo para reducir falsos positivos:
 | AI/ML/LLM | Modelos, prompts, RAG, datos de entrenamiento o cadena de IA. |
 | Enterprise | Entornos y comportamientos empresariales generales. |
 | ICS/OT | Sistemas industriales y tecnología operacional. |
+| Digital Assets / Web3 | Smart contracts, blockchain, wallets, oráculos, firmas y pagos con activos digitales. |
 | Fraud | Abuso de cuentas, credenciales y escenarios de fraude. |
 | Generic/Unknown | No existe evidencia suficiente para una superficie más precisa. |
 
@@ -217,6 +221,12 @@ cuerpos completos ni interacciones Collaborator. El texto se limita, se retira
 contenido `script`/`style`, se redactan patrones comunes de secretos y la URL se
 reduce a su base sin query ni fragmento. Estas medidas no sustituyen la revisión
 humana porque formatos de secreto inusuales pueden permanecer.
+
+Cuando el resumen contiene expresiones inequívocas como `smart contract`,
+`blockchain`, `Web3`, `digital asset`, `oracle manipulation` o `reentrancy`, el
+importador propone la superficie **Digital Assets / Web3**. Es solo una ayuda
+determinista: el analista debe corregirla antes del análisis si el contexto real
+es Web, API, fraude u otra superficie.
 
 ## 10. Interpretar los resultados
 
@@ -275,8 +285,8 @@ organización.
 
 ## 13. Catálogo y fuentes
 
-El catálogo `2026.08.06-1` contiene 86 reglas curadas y no es una copia completa
-de cada framework. `SOURCE_MANIFEST.json` registra 15 fuentes oficiales con
+El catálogo `2026.08.06-2` contiene 96 reglas curadas y no es una copia completa
+de cada framework. `SOURCE_MANIFEST.json` registra 16 fuentes oficiales con
 versión, consulta, URL, términos, SHA-256, dominio y conteos.
 
 Para verificar el catálogo embebido:

@@ -7,9 +7,16 @@ license is in `LICENSE-RHINO-MPL-2.0.txt`. PortSwigger
 Montoya 2026.7 is a provided API and is not bundled.
 
 The embedded curated catalog attributes identifiers and titles to CWE, OWASP,
-MITRE ATT&CK, MITRE D3FEND, MITRE ATLAS and the Center for Threat-Informed
-Defense Fight Fraud Framework. Those materials and marks retain their published
-terms. Inclusion expresses interoperability, not sponsorship or endorsement.
+MITRE ATT&CK, MITRE D3FEND, MITRE ATLAS, MITRE AADAPT and the Center for
+Threat-Informed Defense Fight Fraud Framework. Those materials and marks retain
+their published terms. Inclusion expresses interoperability, not sponsorship
+or endorsement.
+
+MITRE AADAPT required designation: “© 2025 The MITRE Corporation. This work is
+reproduced and distributed with the permission of The MITRE Corporation.”
+AADAPT™ and MITRE AADAPT™ are trademarks of The MITRE Corporation. See
+`META-INF/LICENSE-MITRE-AADAPT.txt` and the source manifest for terms and the
+pinned official snapshot.
 
 Exact official source URLs, versions, terms, dates and SHA-256 values are in
 `catalogs/SOURCE_MANIFEST.json`. Project source and the expanded notices are at

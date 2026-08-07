@@ -6,6 +6,7 @@ Peñuela Camacho. This product includes original correlation logic and software
 authored by Edwin Javier Peñuela Camacho.
 
 The names and identifiers of CWE, OWASP, MITRE ATT&CK, MITRE D3FEND, MITRE
-ATLAS, Fight Fraud Framework, CVSS and PortSwigger Montoya remain subject to
-their respective owners' terms. Their inclusion does not imply sponsorship or
-endorsement. See THIRD-PARTY-NOTICES.md and SOURCE_MANIFEST.json in this JAR.
+ATLAS, MITRE AADAPT, Fight Fraud Framework, CVSS and PortSwigger Montoya remain
+subject to their respective owners' terms. Their inclusion does not imply
+sponsorship or endorsement. See THIRD-PARTY-NOTICES.md and
+SOURCE_MANIFEST.json in this JAR.

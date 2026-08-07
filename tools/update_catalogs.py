@@ -17,7 +17,7 @@ MANIFEST = ROOT / "SOURCE_MANIFEST.json"
 CATALOG = ROOT / "src/main/resources/mappings/correlations.json"
 EMBEDDED_MANIFEST = ROOT / "src/main/resources/catalogs/SOURCE_MANIFEST.json"
 MAX_SOURCE_BYTES = 150 * 1024 * 1024
-CATALOG_VERSION = "2026.08.06-1"
+CATALOG_VERSION = "2026.08.06-2"
 
 REQUIRED_COLUMNS = {
     "framework", "frameworkVersion", "identifier", "title", "relationType",
@@ -28,7 +28,10 @@ RELATION_TYPES = {
     "INPUT_ASSERTED", "CURATED_CORRELATION", "CONTEXTUAL_ENABLEMENT",
     "DEFENSIVE_MITIGATION", "OFFICIAL_REFERENCE",
 }
-SURFACES = {"WEB", "API", "MOBILE", "AI_ML_LLM", "ENTERPRISE", "ICS_OT", "FRAUD", "GENERIC_UNKNOWN"}
+SURFACES = {
+    "WEB", "API", "MOBILE", "AI_ML_LLM", "ENTERPRISE", "ICS_OT",
+    "DIGITAL_ASSETS", "FRAUD", "GENERIC_UNKNOWN",
+}
 
 
 def load_json(path: Path):

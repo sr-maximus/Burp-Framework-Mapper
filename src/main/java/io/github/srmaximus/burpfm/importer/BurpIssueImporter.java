@@ -42,7 +42,7 @@ public final class BurpIssueImporter {
                 detail,
                 remediation.isBlank() ? "Imported from Burp issue summary." : "Burp remediation: " + remediation,
                 SensitiveDataRedactor.safeAsset(issue.baseUrl()),
-                inferSurface(issue.baseUrl()),
+                inferSurface(issue.baseUrl(), combined),
                 CweParser.extractExplicit(combined),
                 "",
                 "",
@@ -53,7 +53,14 @@ public final class BurpIssueImporter {
                 "burp-audit-issue");
     }
 
-    static Surface inferSurface(String baseUrl) {
+    static Surface inferSurface(String baseUrl, String summary) {
+        String context = summary == null ? "" : summary.toLowerCase(java.util.Locale.ROOT);
+        if (context.contains("smart contract") || context.contains("blockchain")
+                || context.contains("web3") || context.contains("cryptocurrency")
+                || context.contains("crypto wallet") || context.contains("digital asset")
+                || context.contains("oracle manipulation") || context.contains("reentrancy")) {
+            return Surface.DIGITAL_ASSETS;
+        }
         if (baseUrl == null || baseUrl.isBlank()) {
             return Surface.GENERIC_UNKNOWN;
         }

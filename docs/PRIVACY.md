@@ -4,6 +4,10 @@ All classification, CVSS calculation and export happens inside the Burp process.
 The extension contains no HTTP client, telemetry, analytics, remote model,
 automatic update or cloud integration.
 
+Framework content, including the curated MITRE AADAPT subset, is embedded in
+the JAR. Selecting an AADAPT result or opening its local detail does not contact
+MITRE; the official URL is exported as a reference for deliberate human review.
+
 ## Burp issue import
 
 The importer accesses only:

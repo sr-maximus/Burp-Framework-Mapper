@@ -8,7 +8,7 @@ Extensión defensiva para Burp Suite que transforma hallazgos existentes —de
 Burp Audit o introducidos manualmente— en un mapa técnico explicable y
 exportable. Correlaciona localmente con CWE; OWASP Web, API, Mobile, MASVS,
 ASVS y GenAI/LLM; MITRE ATT&CK Enterprise, Mobile e ICS; MITRE D3FEND, ATLAS y
-Fight Fraud Framework (F3); y calcula CVSS 4.0 con el algoritmo oficial de
+AADAPT; Fight Fraud Framework (F3); y calcula CVSS 4.0 con el algoritmo oficial de
 FIRST. No genera tráfico, no explota objetivos, no llama servicios externos y
 no presenta una correlación como prueba de actividad adversaria o cumplimiento.
 
@@ -38,10 +38,11 @@ señales, explicación, fuente oficial, fecha, limitaciones y superficie.
 | Seguridad móvil | OWASP Mobile 2024 (10) y MASVS 2.1.0 (8). |
 | IA generativa | OWASP GenAI/LLM 2025 (10) y MITRE ATLAS 2026.07 (5). |
 | Contexto adversario | ATT&CK 19.1 Enterprise (3), Mobile (2) e ICS (2). |
+| Activos digitales y Web3 | MITRE AADAPT 2025.10.31-snapshot (10). |
 | Defensa y fraude | D3FEND 1.5.0 (5) y Fight Fraud Framework/F3 1.1 (4). |
 | Severidad y salida | CVSS 4.0, matriz hallazgo×framework y JSON/CSV/Markdown/SARIF. |
 
-Son 86 reglas curadas, no 86 afirmaciones de equivalencia. La herramienta
+Son 96 reglas curadas, no 96 afirmaciones de equivalencia. La herramienta
 distingue lo declarado por el analista, las referencias oficiales, las
 correlaciones propias del proyecto, el posible contexto de conducta adversaria
 y las mitigaciones defensivas. Esto permite comunicar mejor el hallazgo sin
@@ -53,8 +54,8 @@ inventar evidencia ni convertir el resultado en una certificación. Vea la
 
 - Entrada manual completa y envío desde el menú contextual de hallazgos Audit.
 - Superficies separadas: Web, API, Mobile, AI/ML/LLM, Enterprise, ICS/OT,
-  Fraud y Generic/Unknown.
-- Catálogo curado de 86 reglas con versiones, URL oficial, fecha de verificación,
+  Digital Assets/Web3, Fraud y Generic/Unknown.
+- Catálogo curado de 96 reglas con versiones, URL oficial, fecha de verificación,
   relación semántica, explicación, límites y señales coincidentes.
 - CVSS 4.0 calculado con el algoritmo de referencia oficial de FIRST.
 - Resultados ordenables y filtrables con detalle “por qué”, resumen, matriz de
@@ -115,9 +116,9 @@ resultado vacío es válido. Consulte [metodología](docs/MAPPING-METHODOLOGY.md
 
 ## Actualizar catálogos
 
-`tools/generate_curated_catalog.py` reconstruye las 86 reglas revisadas.
+`tools/generate_curated_catalog.py` reconstruye las 96 reglas revisadas.
 `tools/update_catalogs.py --verify-upstream` valida estructura, unicidad, HTTPS,
-conteos y los SHA-256 de las 15 fuentes. Un cambio upstream hace fallar la tarea
+conteos y los SHA-256 de las 16 fuentes. Un cambio upstream hace fallar la tarea
 programada: no se acepta automáticamente y exige revisión humana del contenido,
 licencia, versión, mapeo y pruebas antes de actualizar el manifiesto.
 

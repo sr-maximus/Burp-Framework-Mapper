@@ -33,6 +33,16 @@ license reproduced in [third_party/FIRST-CVSS-LICENSE.txt](third_party/FIRST-CVS
 - MITRE D3FEND™ content is attributed to The MITRE Corporation and is used
   under its published terms and repository license.
 - MITRE ATLAS™ data is sourced from `mitre-atlas/atlas-data` under Apache-2.0.
+- MITRE AADAPT™ identifiers and titles are drawn from the official website
+  snapshot recorded in `SOURCE_MANIFEST.json` and used under the
+  [AADAPT Terms of Use](https://aadapt.mitre.org/resources/terms/). The project
+  redistributes only a small curated subset with project-authored correlations
+  and limitations. Required designation: “© 2025 The MITRE Corporation. This
+  work is reproduced and distributed with the permission of The MITRE
+  Corporation.” AADAPT™ and MITRE AADAPT™ are trademarks of The MITRE
+  Corporation. Use does not imply MITRE sponsorship, certification or approval.
+  The project owner has notified MITRE of this use. Correspondence and contact
+  details are not distributed with the project.
 - Fight Fraud Framework (F3) data is sourced from the Center for Threat-Informed
   Defense repository under Apache-2.0.
 - CWE™ identifiers and names are sourced from MITRE's official CWE distribution

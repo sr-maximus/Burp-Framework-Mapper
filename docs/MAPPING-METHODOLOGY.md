@@ -40,8 +40,11 @@ surface differs so that the reviewer can correct the input.
 ## Guardrails against overclaiming
 
 - A finding can legitimately return no mapping.
-- ATT&CK, ATLAS and F3 results describe possible context, not observed tactics,
-  techniques, fraud activity or attribution.
+- ATT&CK, ATLAS, AADAPT and F3 results describe possible context, not observed
+  tactics, techniques, digital-asset abuse, fraud activity or attribution.
+- AADAPT inference is restricted to the `Digital Assets / Web3` surface. An
+  explicitly supplied AADAPT identifier is preserved only as an analyst input
+  assertion so an incorrect surface or identifier can be reviewed.
 - D3FEND output is a defensive option, not evidence that a control exists or is
   effective.
 - OWASP and verification-standard output is neither full coverage nor a

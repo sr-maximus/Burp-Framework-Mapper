@@ -15,6 +15,10 @@ manual Burp validation is **pending** and no document should claim otherwise.
 - [ ] Open the **Framework Mapper** suite tab in light and dark Burp themes.
 - [ ] Resize the main window; verify fields, split pane, table and tabs remain usable.
 - [ ] Load the synthetic example and confirm analysis finishes without freezing the UI.
+- [ ] Analyze a synthetic smart-contract reentrancy finding on **Digital Assets
+      / Web3**; confirm `ADT3012.005` appears as contextual enablement and its
+      explanation says this is not proof of adversary activity.
+- [ ] Re-run the same text on **Web**; confirm no inferred AADAPT result appears.
 - [ ] Confirm result sorting, all three filters, detail view and summary.
 - [ ] Validate a correct and incorrect CVSS 4.0 vector.
 - [ ] From an Audit issue, send one and multiple selected issue summaries.

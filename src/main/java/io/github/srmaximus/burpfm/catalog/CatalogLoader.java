@@ -12,8 +12,8 @@ import java.util.List;
 
 public final class CatalogLoader {
     public static final String DEFAULT_RESOURCE = "/mappings/correlations.json";
-    public static final String CATALOG_VERSION = "2026.08.06-1";
-    public static final int CURATED_RULE_COUNT = 86;
+    public static final String CATALOG_VERSION = "2026.08.06-2";
+    public static final int CURATED_RULE_COUNT = 96;
 
     private final ObjectMapper mapper;
 
