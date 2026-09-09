@@ -16,8 +16,8 @@ no presenta una correlación como prueba de actividad adversaria o cumplimiento.
 
 ## Autoría
 
-**Burp Framework Mapper fue concebido, creado e impulsado por Edwin Javier
-Peñuela Camacho**, creador y propietario del proyecto. CWE, OWASP, MITRE,
+**Burp Framework Mapper** fue concebido, creado e impulsado por **Edwin
+Peñuela**, creador y propietario del proyecto. CWE, OWASP, MITRE,
 FIRST y PortSwigger aportan marcos, datos o interfaces de terceros; no son
 autores, certificadores, aprobadores ni patrocinadores de esta extensión.
 
@@ -128,5 +128,5 @@ Vea [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md),
 [arquitectura](docs/ARCHITECTURE.md) y [modelo de amenazas](docs/THREAT-MODEL.md).
 No incluya datos reales de clientes en issues, pruebas o ejemplos.
 
-Copyright © 2026 Edwin Javier Peñuela Camacho. Apache-2.0. Los marcos y marcas
+Copyright © 2026 Edwin Peñuela. Apache-2.0. Los marcos y marcas
 de terceros conservan sus términos; vea [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
